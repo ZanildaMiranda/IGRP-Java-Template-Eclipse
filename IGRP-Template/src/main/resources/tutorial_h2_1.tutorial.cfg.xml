@@ -2,7 +2,7 @@
 <!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd"><hibernate-configuration>
 	<session-factory>
 		<property name="hibernate.connection.driver_class">org.h2.Driver</property>
-		<property name="hibernate.connection.url">jdbc:h2:file:C:\Users\rodney.fernandes\Desktop\teste\IGRP-Framework\IGRP\src\main\java\nosi\webapps\tutorial\igrpweb_doc;AUTO_SERVER=TRUE</property>
+		<property name="hibernate.connection.url">jdbc:h2:file:C:\Users\Dell\git\IGRP-Java-Template-Eclipse\IGRP-Template\src\main\java\nosi\webapps\tutorial\igrpweb_doc;AUTO_SERVER=TRUE</property>
 		<property name="hibernate.connection.username">igrpweb</property>
 		<property name="hibernate.connection.password">docdb</property>
 		<property name="hibernate.hbm2ddl.auto">update</property>
