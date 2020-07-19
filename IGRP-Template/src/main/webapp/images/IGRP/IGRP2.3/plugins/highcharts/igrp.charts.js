@@ -32,57 +32,103 @@
 
 	};
 
+	function NormalizeExport(opts, callback){
+
+		try{
+
+			for(var n in opts.plotOptions){
+
+	    		var type = opts.plotOptions[n];
+
+	    		if(type.animation)
+
+	    			delete type.animation;
+
+	    	}
+
+	    	if(callback)
+				
+	    		setTimeout(function(){
+
+	    			callback(opts);
+
+	    		},100)
+
+		}catch(err){
+
+			if(callback)
+
+				callback(opts);
+
+		}
+
+	};
+
 	function _export(chart,type){
 
     	var name  = $(chart.container).parents('.gen-container-item').attr('item-name')+'.'+$.IGRP.getPageInfo(),
 
     		title = $(chart.container).parents('.gen-container-item').find('>.box-header>.box-title').text(),
 
-    		opts  = $.extend(true,{},chart.options);
+			opts  = $.extend(true,{},chart.options);
+		
 
-    	var data = {	
-		    options: JSON.stringify(opts),
-		    filename: title || name,
-		    type: type,
-		    async: true
-		};
+    	NormalizeExport(opts, function(res){
 
-		var exportUrl = '//export.highcharts.com/';
+	
+			var svg = chart.getChartHTML();
 
-		$.post(exportUrl, data, function(d) {
-		    
-		    var url = exportUrl + d,
+			var svg_ = chart.getSVG();
 
-		    	moz = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
-		 
-			if( $('html').hasClass('ie') || moz )
-				
-				window.open(url,'_blank');
+  			svg_ = chart.sanitizeSVG(svg_);
 
-			else{
+    		var data = {	
+				//options: JSON.stringify(res),
+				svg: svg_,
+			    filename: title || name,
+			    type: type,
+				async: true,
+				scale : 2
+			};
 
-				var file_path = url,
+			var exportUrl = '//export.highcharts.com/';
 
-					a 		  = document.createElement('A'),
+			$.post(exportUrl, data, function(d) {
+			    
+			    var url = exportUrl + d,
 
-					extension = type ? type.split('/')[1] : null;
-
-				extension = extension || 'pdf';
-
-				a.href = file_path;
+			    	moz = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
+			 
+				if( $('html').hasClass('ie') || moz )
 					
-				a.download = (title || name)+'.'+extension ;
+					window.open(url,'_blank');
 
-				a.target = '_newtab';
-				
-				document.body.appendChild(a);
-				
-				a.click();
-				
+				else{
 
-			}
+					var file_path = url,
 
-		});
+						a 		  = document.createElement('A'),
+
+						extension = type ? type.split('/')[1] : null;
+
+					extension = extension || 'pdf';
+
+					a.href = file_path;
+						
+					a.download = (title || name)+'.'+extension ;
+
+					a.target = '_newtab';
+					
+					document.body.appendChild(a);
+					
+					a.click();
+					
+
+				}
+
+			});
+
+    	});
 
     };
 
@@ -192,6 +238,16 @@
 			            data: data
 			        }]
 			    };
+				
+				if(p.view3d){
+					chart.chart['options3d'] = {
+						enabled: true,
+						alpha: 45,
+						beta: 0
+					};
+
+					chart.plotOptions.pie['depth'] = 35;
+				}
 
 				return {structure:chart, colors:colors};
 			},
@@ -249,6 +305,17 @@
 				        data: data
 				    }]
 				};
+				
+				if (p.view3d) {
+
+					chart.chart['options3d'] = {
+						enabled: true,
+						alpha: 45,
+						beta: 0
+					};
+
+					chart.plotOptions.pie['depth'] = 35;
+				}
 
 				return {structure:chart, colors:colors};
 			},
@@ -557,7 +624,8 @@
 			OTHERS : function(p){// type['LINE','AREA','COLUMN','SPLINE','BAR','STACKEDBAR','STACKEDAREA','STACKEDPERCENTAREA','STACKEDCOLUMN','STACKEDGROUPEDCOLUMN']
 				var data   = [],
 					colors = [],
-					type   = p.type;
+					type   = p.type,
+					vtype  = com.getTypeChart(type);
 
 				p.labels.forEach(function(e,i){
 					data.push({
@@ -569,7 +637,7 @@
 				
 				var chart = {
 					chart:{
-						type: com.getTypeChart(type),
+						type: vtype,
 						marginTop: 50
 					},
 				    title: {
@@ -596,6 +664,21 @@
 			        },
 				    series: data
 				};
+				
+				if(p.view3d){
+					
+					chart.chart['options3d'] = {
+						enabled: true,
+						alpha: 10,
+						beta: 25,
+						depth: 70,
+						viewDistance: 25
+					};
+
+					chart.plotOptions[vtype] = {
+						depth: 25
+					};
+				}
 
 				if (type == 'STACKEDAREA' || type == 'STACKEDPERCENTAREA') {
 					var stacking = 'normal';
@@ -783,8 +866,14 @@
 				categories  = o.attr('chart-categories') ? o.attr('chart-categories').split('|') : [],
 				filterType  = o.attr('filter-type') ? o.attr('filter-type').split(',') : [],
 				colors  	= o.attr('chart-colors') ? o.attr('chart-colors').split('|') : [],
-				showData 	= o.attr('chart-datalabels') && o.attr('chart-datalabels') == 'true' ? true : false;
-	
+				view3d 		= o.attr('chart-3d') && o.attr('chart-3d') == 'true' ? true : false,
+				showData 	= o.attr('chart-datalabels') && o.attr('chart-datalabels') == 'true' ? true : false,
+				credits     = false;
+				
+			if(o.data('credits')){
+				credits = o.data('credits');
+			}
+				
 			if (data[0]) {
 
 				if(p.type){
@@ -822,6 +911,7 @@
 					desclabel 	: o.attr('chart-desc-label') ? o.attr('chart-desc-label') : '',
 					labels 		: labels,
 					type 		: type,
+					view3d 		: view3d,
 					title  		: title
 				});
 
@@ -842,13 +932,13 @@
 				            events:{
 				                click:function(e){
 				                	
-				                	var pointX = this.category.toString() ||  this.name,
-				                		pointY = this.y.toString() || this.value,
-				                		pointZ = this.series.name;
+				                	var pointX = this.category ? this.category.toString() : this.name,
+										pointY = this.y ? this.y.toString() : this.value,
+					                	pointZ = this.series.name;
 
 				                	if (type == 'HEATMAP') {
 				                		pointX = categories[this.x];
-				                		pointY = name[this.y],
+				                		pointY = name[this.y];
 				                		pointZ = this.value;
 				                	}
 
@@ -870,7 +960,7 @@
 			            }
 			        };
 					
-					if ($.inArray(type.toLowerCase(), chartTwoEx) === - 1) {
+					/*if ($.inArray(type.toLowerCase(), chartTwoEx) === - 1) {
 						chart.structure.plotOptions.series.dataLabels = {
 							enabled: true,
 							style: {
@@ -878,7 +968,7 @@
 								textOutline: 'none'
 							}
 						};
-					}
+					}*/
 
 			        if(showData){
 
@@ -890,10 +980,10 @@
 			                	fontSize	: "11px", 
 			                	fontWeight	: "none", 
 			                	textOutline	: "1px contrast" 
-			                },
+			                }/*,
 			                formatter : function(){
 			                	return this.y > 0 ? this.y : '';
-			                }
+			                }*/
 				        };
 			        }
 
@@ -938,7 +1028,7 @@
 				                    text: null
 				                },
 				                credits: {
-				                    enabled: false
+				                    enabled: ''
 				                }
 				            }
 				        }]
@@ -980,6 +1070,21 @@
 				    		}
 				    	}				    	
 				    };
+				    
+				    chart.structure.chart.events = {
+						load : function(){
+							var _self = this;
+							var holder = $('#'+id).parents('.IGRP-highcharts').first();
+							var name = holder.attr('item-name');
+							
+							holder.trigger('igrp-highcharts-load', {
+								name : name,
+								chart : _self
+							});
+						}
+					}
+				    
+				    chart.structure.credits = credits;
 				 	
 
 				 	var renderChart = Highcharts.chart(id,chart.structure);

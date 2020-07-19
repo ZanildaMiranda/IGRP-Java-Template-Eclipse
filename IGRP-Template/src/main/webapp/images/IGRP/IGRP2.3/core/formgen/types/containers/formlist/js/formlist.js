@@ -83,21 +83,7 @@
 					container.SET.tableFooter(v);
 					container.SET.totalcol(v);
 				},
-				xslValue : 'total-col="true"',
-				onEditionStart: function (v) {
-
-					$('input', v.input).on('change', function () {
-
-						var isChecked = $(this).is(':checked'),
-							action = isChecked ? 'show' : 'hide',
-							holderformat = $('.gen-properties-setts-holder div[rel="numberformat"]');
-
-						holderformat[action]();
-
-						if (!isChecked)
-							$(':input', holderformat).val('');
-					});
-				}
+				xslValue : 'total-col="true"'
 			});
 
 			field.setPropriety({
@@ -120,22 +106,7 @@
 					container.SET.addTotalRow(v);
 					container.SET.totalrow(v);
 				},
-				xslValue : 'total-row="true"',
-				onEditionStart: function (v) {
-
-					$('input', v.input).on('change', function () {
-
-						var isChecked = $(this).is(':checked'),
-							action = isChecked ? 'show' : 'hide',
-							holdermathcal = $('.gen-properties-setts-holder div[rel="mathcal"]');
-
-						holdermathcal[action]();
-
-						if (!isChecked)
-							$(':input', holdermathcal).val('');
-							
-					});
-				}
+				xslValue : 'total-row="true"'
 			});
 
 			field.setPropriety({
@@ -143,33 +114,6 @@
 				value   :false,
 				editable:false,
 				xslValue:'total-row'
-			});
-			
-			field.setPropriety({
-				name : 'mathcal',
-				label: 'Mathematical Expression',
-				value: '',
-				size : 12,
-				inputType: 'textarea',
-				onEditionStart: function (o) {
-					if (field.GET.total_row && field.GET.total_row())
-						o.input.show();
-					else
-						o.input.hide();
-				}
-			});
-
-			field.setPropriety({
-				name: 'numberformat',
-				label: 'Number Format',
-				value: '',
-				size: 12,
-				onEditionStart: function (o) {
-					if (field.GET.total_col && field.GET.total_col())
-						o.input.show();
-					else
-						o.input.hide();
-				}
 			});
 		}
 	
@@ -207,12 +151,13 @@
 
 						addColField = new f.field('number',{
 							properties:{
-								label 	 : 'Total',
-								tag   	 : name,
-								name  	 : 'p_'+name,
-								readonly : true,
-								totalrow : true,
-								total_col: true
+								label 	 	: 'Total',
+								tag   	 	: name,
+								name  	 	: 'p_'+name,
+								readonly 	: true,
+								totalrow 	: true,
+								total_col	: true,
+								calculation : true
 							}
 						});
 
@@ -367,15 +312,20 @@
 			if(f.type != 'hidden' && $.inArray(f.type,container.reject) === -1){
 				
 				var fValue = table+"[@total='yes']/"+f.GET.tag(),
-					align  =  f.GET.align ? f.GET.align() : 'right';
+					align  =  f.GET.align ? f.GET.align() : 'right',
+					id 	   = 'total-col-'+f.GET.tag();
 				
-				rtn+=' <xsl:if test="'+fValue+'"><td class="total-col" align="'+align+'" id="total-col-'+f.GET.tag()+'">';
+				rtn+=' <xsl:if test="'+fValue+'"><td class="total-col" align="'+align+'" id="'+id+'">';
 				
-				if(f.GET.total_col && f.GET.total_col())
-					rtn+='<xsl:if test="not('+fValue+'/@visible)"><p><xsl:value-of select="'+fValue+'"/></p></xsl:if>';
+				if(f.GET.total_col && f.GET.total_col()){
+					rtn+='<xsl:if test="not('+fValue+'/@visible)">'+
+						'<p><xsl:value-of select="'+fValue+'"/></p>'+
+						'<input type="hidden" name="p_' + id + '" value="{' + fValue + '}"/>'+
+					'</xsl:if>';
+				}
 	
-				rtn+='<input type="hidden" name="{'+fValue+'/@name}_fk_desc" value="{'+fValue+'}"/>'+
-					'<input type="hidden" name="{'+fValue+'/@name}_fk" value="{'+fValue+'_desc}"/>'
+				/*rtn+='<input type="hidden" name="{'+fValue+'/@name}_fk_desc" value="{'+fValue+'}"/>'+
+					'<input type="hidden" name="{'+fValue+'/@name}_fk" value="{'+fValue+'_desc}"/>'*/
 				rtn+='</td></xsl:if>';
 			}
 		});

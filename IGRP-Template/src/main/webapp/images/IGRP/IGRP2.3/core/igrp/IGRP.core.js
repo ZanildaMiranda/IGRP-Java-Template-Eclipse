@@ -196,18 +196,21 @@
 
 				var lookup = null,
 					label  = null,
+					isremote = null,
 					tag    = p.tag,
 					value  = p.value;
 
 				if (typeof $(tag) === 'object'){
 					
-					lookup  = $(tag).attr('lookup') ? $(tag).attr('lookup') : null;
+					lookup  	= $(tag).attr('lookup') ? $(tag).attr('lookup') : null;
 
-					label   = $(tag).attr('label') ? $(tag).attr('label') : null;
+					label   	= $(tag).attr('label') ? $(tag).attr('label') : null;
+					
+					isremote   	= $(tag).attr('isremote') ? $(tag).attr('isremote') : null;
+					
+					value   	= $(tag).text();
 
-					value   = $(tag).text();
-
-					tag 	= tag.tagName.toLowerCase();
+					tag 		= tag.tagName.toLowerCase();
 					
 				}
 
@@ -232,7 +235,7 @@
 
 								value = value.split('|');
 							
-								if($(tag).attr('isremote')){
+								if(isremote){
 							
 									if(!$('option',formElement)[0]){
 										
@@ -483,6 +486,13 @@
 			isNotNaN : function(v){
 				return isNaN(v)? 0:v*1;
 			},
+			
+			getType: function (f) {
+				var type = f.attr('type') ? f.attr('type') : f.prop('tagName');
+
+				return type ? type.toLowerCase() : '';
+			},
+			
 			arrRemoveItem : function(arr,v){
                 return $.grep(arr, function(val) {
 				  return val != v;
@@ -612,7 +622,10 @@
 
 						var extract = p.extract[f],
 							val 	= extract.field.val();
-
+						
+						if ($.IGRP.utils.getType(extract.field) == 'date')
+							val = new Date(val).getTime();
+						
 						val = $.isNumeric(val) ? val * 1 : "'"+val+"'";
 						
 						str = str.replaceAll(extract.str, val);
@@ -761,7 +774,7 @@
 					var type = p.type.toLowerCase() || 'info',
 						icon = $.IGRP.utils.message.getIcon[type];
 
-					return '<div class="alert alert-'+type+'" role="alert">'+
+					return '<div class="dynamic-alert alert alert-'+type+'" role="alert">'+
 						'<i class="fa fa-'+icon+' igrp-msg-icon"></i>'+
 						'<a class="close" data-dismiss="alert" aria-label="Close">'+
 						'<span aria-hidden="true"><i class="fa fa-times"></i></span>'+
