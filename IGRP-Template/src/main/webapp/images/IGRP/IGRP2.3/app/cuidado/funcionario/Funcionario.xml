@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP-Template/images/IGRP/IGRP2.3/app/cuidado/funcionario/Funcionario.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP-Template/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Funcionario</page>
+    <app>cuidado</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.cuidado.pages</package_db>
+        <package_html>Funcionario</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=82</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Funcionario</title>
+        <sectionheader_1 type="sectionheader" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <sectionheader_1_text type="text" name="p_sectionheader_1_text" persist="true" maxlength="4000">
+                    <value>
+                        <![CDATA[Sectionheader]]>
+                    </value>
+                </sectionheader_1_text>
+            </fields>
+        </sectionheader_1>
+        <form_1 type="form" xml-type="form" gen-type="container" gen-group="">
+            <fields/>
+            <tools-bar>
+                <item type="form" code="" class="primary" rel="form_1_button_1" refresh_components="">
+                    <title>Button</title>
+                    <app>cuidado</app>
+                    <page>Funcionario</page>
+                    <link>index</link>
+                    <parameter>../images/IGRP/IGRP2.3/app/cuidado/funcionario/Funcionario.xml?</parameter>
+                    <target>_blank</target>
+                    <img>primary|fa-angle-right</img>
+                    <preview>../images/IGRP/IGRP2.3/app/cuidado/funcionario/Funcionario.xml</preview>
+                </item>
+            </tools-bar>
+        </form_1>
+        <table_1 type="table" xml-type="table" gen-type="container" gen-group="true">
+            <fields>
+                <table_1_plaintext_1 name="p_table_1_plaintext_1" type="plaintext" disable_output_escaping="false" html_class="" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Plaintext</label>
+                </table_1_plaintext_1>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <table_1_plaintext_1 name="p_table_1_plaintext_1">Deserunt aperiam sit magna ali</table_1_plaintext_1>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <table_1_plaintext_1 name="p_table_1_plaintext_1">Adipiscing dolor amet ipsum st</table_1_plaintext_1>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <table_1_plaintext_1 name="p_table_1_plaintext_1">Rem sit sit anim totam magna r</table_1_plaintext_1>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <table_1_plaintext_1 name="p_table_1_plaintext_1">Natus ut adipiscing sit aliqua</table_1_plaintext_1>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <table_1_plaintext_1 name="p_table_1_plaintext_1">Amet consectetur sed unde lore</table_1_plaintext_1>
+                    </row>
+                </value>
+                <context-menu>
+                    <item type="specific" code="" class="primary" rel="table_1_button_1" refresh_components="">
+                        <title>Button</title>
+                        <app>cuidado</app>
+                        <page>Funcionario</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/cuidado/funcionario/Funcionario.xml?</parameter>
+                        <target>_blank</target>
+                        <img>primary|fa-angle-right</img>
+                        <preview>../images/IGRP/IGRP2.3/app/cuidado/funcionario/Funcionario.xml</preview>
+                    </item>
+                    <item type="specific" code="" class="primary" rel="table_1_button_2" refresh_components="">
+                        <title>Button</title>
+                        <app>cuidado</app>
+                        <page>Funcionario</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/cuidado/funcionario/Funcionario.xml?</parameter>
+                        <target>_blank</target>
+                        <img>primary|fa-angle-right</img>
+                        <preview>../images/IGRP/IGRP2.3/app/cuidado/funcionario/Funcionario.xml</preview>
+                    </item>
+                </context-menu>
+            </table>
+        </table_1>
+    </content>
+    <blockly>
+        <imports></imports>
+        <xml>
+            <block type="controller" id="controller" x="388" y="13"></block>
+        </xml>
+    </blockly>
+</rows>
