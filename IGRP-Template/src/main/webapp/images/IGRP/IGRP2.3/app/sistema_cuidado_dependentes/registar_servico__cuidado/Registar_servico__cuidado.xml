@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP-Template/images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/registar_servico__cuidado/Registar_servico__cuidado.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP-Template/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Registar_servico__cuidado</page>
+    <app>sistema_cuidado_dependentes</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.sistema_cuidado_dependentes.pages</package_db>
+        <package_html>Registar_servico__cuidado</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=89</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Registar Servico  Cuidado</title>
+        <sectionheader_1 type="sectionheader" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <sectionheader_1_text type="text" name="p_sectionheader_1_text" persist="true" maxlength="4000">
+                    <value>
+                        <![CDATA[<p>Registo de Servi&ccedil;o de Cuidado</p>
+]]>
+                    </value>
+                </sectionheader_1_text>
+            </fields>
+        </sectionheader_1>
+        <toolsbar_1 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group="">
+            <item type="specific" code="" rel="registar" refresh_components="">
+                <title>Registar</title>
+                <app>sistema_cuidado_dependentes</app>
+                <page>Registar_servico__cuidado</page>
+                <link>index</link>
+                <target>submit_form</target>
+                <img>success|fa-save</img>
+                <preview>../images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/registar_servico__cuidado/Registar_servico__cuidado.xml</preview>
+            </item>
+        </toolsbar_1>
+        <form_1 type="form" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <tipo name="p_tipo" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Tipo</label>
+                    <value>Dolor totam deserunt sit ipsum</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </tipo>
+                <descriccao name="p_descriccao" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Descricção</label>
+                    <value>Doloremque labore anim magna aliqua</value>
+                </descriccao>
+                <unidade_cuidado name="p_unidade_cuidado" type="lookup" action="index" page="LookupUnidadeCuidado" app="sistema_cuidado_dependentes" lookup_eraser="false" lookup_type="LOOKUP" class="primary" maxlength="250" required="true" change="false" readonly="true" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Unidade Cuidado</label>
+                    <value/>
+                    <lookup>../images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/lookupunidadecuidado/LookupUnidadeCuidado.xml</lookup>
+                    <lookupParams>
+                        <param field-target="p_unidade_cuidado">fwl_unidade_cuidado</param>
+                        <param field-target="p_id_unidade_cuidado">fwl_id_unidade_cuidado</param>
+                    </lookupParams>
+                </unidade_cuidado>
+                <dependente name="p_dependente" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Dependente</label>
+                    <value>Ipsum aperiam lorem doloremque sit</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </dependente>
+                <hidden name="p_id_servico_cuidado" type="hidden" maxlength="250" java-type="Integer" tag="id_servico_cuidado">
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </hidden>
+                <hidden name="p_id_unidade_cuidado" type="hidden" maxlength="250" java-type="int" tag="id_unidade_cuidado"/>
+            </fields>
+        </form_1>
+    </content>
+    <blockly>
+        <imports>
+            <import type="dao">TblServicoCuidado</import>
+            <import type="dao">TblUnidadeCuidado</import>
+            <import type="dao">TblDependente</import>
+        </imports>
+        <xml>
+            <block type="controller" id="controller" x="338" y="38">
+                <statement name="index">
+                    <block type="comment_code" id="EIVh%[@]Wy|BT*yzoue#">
+                        <statement name="value1">
+                            <block type="formuu_form_1" id="*!vnl/eV|[j_gK{=S@Wr" inline="true">
+                                <mutation pxchecked="false" count="0"></mutation>
+                                <field name="dao">TblServicoCuidado</field>
+                                <value name="get_pa">
+                                    <block type="core_get_param" id="q5rl21~)W-25q#zUK~(l">
+                                        <field name="param">id_servico_cuidado_tbl</field>
+                                    </block>
+                                </value>
+                                <statement name="value2">
+                                    <block type="model_form_tipo" id="String::tipo">
+                                        <value name="value1">
+                                            <block type="get-dao-TblServicoCuidado" id="[3lfL}TEFXc^//#pECmU">
+                                                <mutation hover_type="String::tipo"></mutation>
+                                                <field name="DAO_FIELD">String::tipo</field>
+                                            </block>
+                                        </value>
+                                        <next>
+                                            <block type="model_form_descriccao" id="String::descriccao">
+                                                <value name="value1">
+                                                    <block type="get-dao-TblServicoCuidado" id="r_U[Nx!NK-gu@Qa0q=,n">
+                                                        <mutation hover_type="String::descricao"></mutation>
+                                                        <field name="DAO_FIELD">String::descricao</field>
+                                                    </block>
+                                                </value>
+                                                <next>
+                                                    <block type="model_form_unidade_cuidado" id="String::unidade_cuidado">
+                                                        <value name="value1">
+                                                            <block type="get-dao-TblServicoCuidado" id="[O64c:~JPRBaOz/LL3ZT">
+                                                                <mutation hover_type="TblUnidadeCuidado_FK#::idUnidadeCuidadoFk"></mutation>
+                                                                <field name="DAO_FIELD">TblUnidadeCuidado_FK#::idUnidadeCuidadoFk</field>
+                                                                <value name="dao_rela">
+                                                                    <block type="get-dao-TblUnidadeCuidado" id="Z2jj#!*mbG~=XVwIS4gg">
+                                                                        <mutation hover_type="Integer::codigo"></mutation>
+                                                                        <field name="DAO_FIELD">Integer::codigo</field>
+                                                                    </block>
+                                                                </value>
+                                                            </block>
+                                                        </value>
+                                                        <next>
+                                                            <block type="model_form_dependente" id="String::dependente">
+                                                                <value name="value1">
+                                                                    <block type="get-dao-TblServicoCuidado" id="W#V9rQn23/|Z,4[hIDzK">
+                                                                        <mutation hover_type="TblDependente_FK#::idDependenteFk"></mutation>
+                                                                        <field name="DAO_FIELD">TblDependente_FK#::idDependenteFk</field>
+                                                                        <value name="dao_rela">
+                                                                            <block type="get-dao-TblDependente" id="SR|Y/;ME?W~(hoxmd[wb">
+                                                                                <mutation hover_type="String::nome"></mutation>
+                                                                                <field name="DAO_FIELD">String::nome</field>
+                                                                            </block>
+                                                                        </value>
+                                                                    </block>
+                                                                </value>
+                                                                <next>
+                                                                    <block type="model_form_id_servico_cuidado" id="Integer::id_servico_cuidado">
+                                                                        <value name="value1">
+                                                                            <block type="get-dao-TblServicoCuidado" id="`-i!t+?7fWpfo#NR1Y?i">
+                                                                                <mutation hover_type="Integer::idServicoCuidado"></mutation>
+                                                                                <field name="DAO_FIELD">Integer::idServicoCuidado</field>
+                                                                            </block>
+                                                                        </value>
+                                                                        <next>
+                                                                            <block type="model_form_id_unidade_cuidado" id="int::id_unidade_cuidado">
+                                                                                <value name="value1">
+                                                                                    <block type="get-dao-TblServicoCuidado" id="`T3_U,_.@(~+GX-l|4nk">
+                                                                                        <mutation hover_type="TblUnidadeCuidado_FK#::idUnidadeCuidadoFk"></mutation>
+                                                                                        <field name="DAO_FIELD">TblUnidadeCuidado_FK#::idUnidadeCuidadoFk</field>
+                                                                                        <value name="dao_rela">
+                                                                                            <block type="get-dao-TblUnidadeCuidado" id="ZNch7.^ph)u,a-vKo~#r">
+                                                                                                <mutation hover_type="String::nome"></mutation>
+                                                                                                <field name="DAO_FIELD">String::nome</field>
+                                                                                            </block>
+                                                                                        </value>
+                                                                                    </block>
+                                                                                </value>
+                                                                                <next>
+                                                                                    <block type="add_isedit" id="bpT;aaZWcK`#XrDsHdv!">
+                                                                                        <field name="button">registar</field>
+                                                                                    </block>
+                                                                                </next>
+                                                                            </block>
+                                                                        </next>
+                                                                    </block>
+                                                                </next>
+                                                            </block>
+                                                        </next>
+                                                    </block>
+                                                </next>
+                                            </block>
+                                        </next>
+                                    </block>
+                                </statement>
+                            </block>
+                        </statement>
+                    </block>
+                </statement>
+            </block>
+        </xml>
+    </blockly>
+</rows>

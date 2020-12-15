@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP-Template/images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/listar_cuidadores/Listar_cuidadores.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP-Template/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Listar_cuidadores</page>
+    <app>sistema_cuidado_dependentes</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.sistema_cuidado_dependentes.pages</package_db>
+        <package_html>Listar_cuidadores</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=106</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Listar Cuidadores</title>
+        <toolsbar_1 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group="">
+            <item type="specific" code="" rel="novo" refresh_components="">
+                <title>Novo</title>
+                <app>sistema_cuidado_dependentes</app>
+                <page>Cuidadores</page>
+                <link>index</link>
+                <target>modal</target>
+                <img>primary|fa-plus</img>
+                <preview>../images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/cuidadores/Cuidadores.xml</preview>
+            </item>
+        </toolsbar_1>
+        <tbl_cuidadores type="table" xml-type="table" title="Lista de Cuidadores" gen-type="container" gen-group="true">
+            <fields>
+                <tbl_cuidadores_img_1 name="p_tbl_cuidadores_img_1" type="img" persist="true" img="../images/IGRP/IGRP2.3/assets/img/jon_doe.jpg" width="" height="" croppie="false" rounded="false" autoupload="false" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Img</label>
+                </tbl_cuidadores_img_1>
+                <text_1 name="p_text_1" type="text" maxlength="70" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Nome</label>
+                </text_1>
+                <email name="p_email" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Email</label>
+                </email>
+                <unidade_cuidado name="p_unidade_cuidado" type="text" maxlength="60" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Unidade Cuidado</label>
+                </unidade_cuidado>
+                <id_cuidador_tbl name="p_id_cuidador_tbl" type="hidden" maxlength="30" showLabel="true" iskey="true" group_in="" java-type="" tag="id_cuidador_tbl"/>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <tbl_cuidadores_img_1 name="p_tbl_cuidadores_img_1">../images/IGRP/IGRP2.3/assets/img/jon_doe.jpg</tbl_cuidadores_img_1>
+                        <text_1 name="p_text_1">Voluptatem natus voluptatem lorem dolor</text_1>
+                        <email name="p_email">Aperiam elit sed iste voluptat</email>
+                        <unidade_cuidado name="p_unidade_cuidado">Rem sed sit sit elit</unidade_cuidado>
+                        <id_cuidador_tbl name="p_id_cuidador_tbl" tag="id_cuidador_tbl">hidden-4da5_0df8</id_cuidador_tbl>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <tbl_cuidadores_img_1 name="p_tbl_cuidadores_img_1">../images/IGRP/IGRP2.3/assets/img/jon_doe.jpg</tbl_cuidadores_img_1>
+                        <text_1 name="p_text_1">Doloremque aliqua accusantium magna stract</text_1>
+                        <email name="p_email">Lorem magna ut deserunt dolor</email>
+                        <unidade_cuidado name="p_unidade_cuidado">Totam dolor consectetur deserunt consectetur</unidade_cuidado>
+                        <id_cuidador_tbl name="p_id_cuidador_tbl" tag="id_cuidador_tbl">hidden-f5a4_2a0e</id_cuidador_tbl>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <tbl_cuidadores_img_1 name="p_tbl_cuidadores_img_1">../images/IGRP/IGRP2.3/assets/img/jon_doe.jpg</tbl_cuidadores_img_1>
+                        <text_1 name="p_text_1">Iste aliqua aperiam totam voluptatem</text_1>
+                        <email name="p_email">Ipsum perspiciatis consectetur</email>
+                        <unidade_cuidado name="p_unidade_cuidado">Totam adipiscing elit doloremque consectetur</unidade_cuidado>
+                        <id_cuidador_tbl name="p_id_cuidador_tbl" tag="id_cuidador_tbl">hidden-8730_120a</id_cuidador_tbl>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <tbl_cuidadores_img_1 name="p_tbl_cuidadores_img_1">../images/IGRP/IGRP2.3/assets/img/jon_doe.jpg</tbl_cuidadores_img_1>
+                        <text_1 name="p_text_1">Doloremque magna mollit rem perspiciatis</text_1>
+                        <email name="p_email">Natus elit magna aperiam strac</email>
+                        <unidade_cuidado name="p_unidade_cuidado">Doloremque accusantium deserunt accusantium omnis</unidade_cuidado>
+                        <id_cuidador_tbl name="p_id_cuidador_tbl" tag="id_cuidador_tbl">hidden-f484_2edb</id_cuidador_tbl>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <tbl_cuidadores_img_1 name="p_tbl_cuidadores_img_1">../images/IGRP/IGRP2.3/assets/img/jon_doe.jpg</tbl_cuidadores_img_1>
+                        <text_1 name="p_text_1">Amet dolor sed totam rem</text_1>
+                        <email name="p_email">Aliqua voluptatem perspiciatis</email>
+                        <unidade_cuidado name="p_unidade_cuidado">Officia elit aperiam labore laudantium</unidade_cuidado>
+                        <id_cuidador_tbl name="p_id_cuidador_tbl" tag="id_cuidador_tbl">hidden-c79b_27f2</id_cuidador_tbl>
+                    </row>
+                </value>
+                <context-menu>
+                    <item id="button_df7e_4d0e" type="specific" code="" class="info" rel="visualizar" refresh_components="">
+                        <title>Visualizar</title>
+                        <app>sistema_cuidado_dependentes</app>
+                        <page>Listar_cuidadores</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/listar_cuidadores/Listar_cuidadores.xml?</parameter>
+                        <target>modal</target>
+                        <img>info|fa-eye</img>
+                        <preview>../images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/listar_cuidadores/Listar_cuidadores.xml</preview>
+                    </item>
+                    <item id="button_7adb_9f56" type="specific" code="" class="warning" rel="editar" refresh_components="">
+                        <title>Editar</title>
+                        <app>sistema_cuidado_dependentes</app>
+                        <page>Listar_cuidadores</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/listar_cuidadores/Listar_cuidadores.xml?</parameter>
+                        <target>modal</target>
+                        <img>warning|fa-pencil</img>
+                        <preview>../images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/listar_cuidadores/Listar_cuidadores.xml</preview>
+                    </item>
+                    <item id="button_b0fc_1106" type="specific" code="" class="danger" rel="eliminar" refresh_components="">
+                        <title>Eliminar</title>
+                        <app>sistema_cuidado_dependentes</app>
+                        <page>Listar_cuidadores</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/listar_cuidadores/Listar_cuidadores.xml?</parameter>
+                        <target>confirm</target>
+                        <img>danger|fa-trash-o</img>
+                        <preview>../images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/listar_cuidadores/Listar_cuidadores.xml</preview>
+                    </item>
+                </context-menu>
+            </table>
+        </tbl_cuidadores>
+    </content>
+    <blockly>
+        <imports></imports>
+        <xml>
+            <block type="controller" id="controller" x="388" y="13"></block>
+        </xml>
+    </blockly>
+</rows>

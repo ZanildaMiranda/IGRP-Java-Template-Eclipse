@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP-Template/images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/registar_dependentes/Registar_dependentes.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP-Template/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Registar_dependentes</page>
+    <app>sistema_cuidado_dependentes</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.sistema_cuidado_dependentes.pages</package_db>
+        <package_html>Registar_dependentes</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=82</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Registar Dependentes</title>
+        <sectionheader_1 type="sectionheader" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <sectionheader_1_text type="text" name="p_sectionheader_1_text" persist="true" maxlength="4000">
+                    <value>
+                        <![CDATA[<p>Registo de Dependente</p>
+]]>
+                    </value>
+                </sectionheader_1_text>
+            </fields>
+        </sectionheader_1>
+        <toolsbar_1 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group="">
+            <item type="specific" code="" rel="button_1" refresh_components="">
+                <title>Registar</title>
+                <app>sistema_cuidado_dependentes</app>
+                <page>Registar_dependentes</page>
+                <link>index</link>
+                <target>submit_form</target>
+                <img>success|fa-save</img>
+                <preview>../images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/registar_dependentes/Registar_dependentes.xml</preview>
+            </item>
+        </toolsbar_1>
+        <tabcontent_2 type="tabcontent" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <dependentes name="p_dependentes" type="button" request_fields="" target_fields="" closerefresh="false" refresh_components="" refresh_submit="false" adbcli="" custom_return="false" iconColor="#333" iconClass="" img="fa-angle-right" maxlength="50">
+                    <label>Dependentes</label>
+                    <value/>
+                </dependentes>
+                <detalhe_dependente name="p_detalhe_dependente" type="button" request_fields="" target_fields="" closerefresh="false" refresh_components="" refresh_submit="false" adbcli="" custom_return="false" iconColor="#333" iconClass="" img="fa-angle-right" maxlength="50">
+                    <label>Detalhe_Dependente</label>
+                    <value/>
+                </detalhe_dependente>
+            </fields>
+        </tabcontent_2>
+        <form_1 type="form" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <nome name="p_nome" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Nome</label>
+                    <value>Accusantium stract anim consectetur perspiciatis</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </nome>
+                <morada name="p_morada" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Morada</label>
+                    <value>Lorem officia doloremque anim omnis</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </morada>
+                <telefone name="p_telefone" type="number" min="" max="" calculation="false" mathcal="" numberformat="" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false" java-type="">
+                    <label>Telefone</label>
+                    <value>124</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </telefone>
+                <sexo name="p_sexo" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Sexo</label>
+                    <value>Mollit adipiscing officia perspiciatis lorem</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </sexo>
+                <data_nascimento name="p_data_nascimento" type="date" range="false" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false" class="primary">
+                    <label>Data Nascimento</label>
+                    <value>02-07-2011</value>
+                </data_nascimento>
+                <grau_de_dependencia name="p_grau_de_dependencia" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Grau de Dependência</label>
+                    <value>Accusantium ipsum omnis ut perspiciatis</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </grau_de_dependencia>
+                <nacionalidade name="p_nacionalidade" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Nacionalidade</label>
+                    <value>Stract doloremque voluptatem omnis aperiam</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </nacionalidade>
+                <profissao name="p_profissao" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Profissão</label>
+                    <value>Amet sit iste perspiciatis anim</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </profissao>
+                <estado_civil name="p_estado_civil" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Estado Civil</label>
+                    <value>Adipiscing aliqua stract anim labore</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </estado_civil>
+                <autocuidado name="p_autocuidado" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Autocuidado</label>
+                    <value>Anim sit magna sit accusantium</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </autocuidado>
+                <email name="p_email" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Email</label>
+                    <value>Officia deserunt natus consectetur sed</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </email>
+                <cuidador name="p_cuidador" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Cuidador</label>
+                    <value>Natus mollit natus sed anim</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </cuidador>
+                <hidden name="p_id_dependente" type="hidden" maxlength="250" java-type="Integer" tag="id_dependente"/>
+            </fields>
+        </form_1>
+        <form_1 type="form" xml-type="form" copy="true" copy-tag="form_1" copy-package-db="nosi.webapps.sistema_cuidado_dependentes.pages" copy-package-html="Registar_agregado_familiar" gen-type="container" gen-group="">
+            <fields>
+                <nome name="p_nome" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Nome</label>
+                    <value>Amet sit totam consectetur anim</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </nome>
+                <morada name="p_morada" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Morada</label>
+                    <value>Ut officia sit ipsum doloremque</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </morada>
+                <telefone name="p_telefone" type="number" min="" max="" calculation="false" mathcal="" numberformat="" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false" java-type="">
+                    <label>Telefone</label>
+                    <value>33</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </telefone>
+                <sexo name="p_sexo" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Sexo</label>
+                    <value>Amet rem consectetur ut anim</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </sexo>
+                <tipo name="p_tipo" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Tipo</label>
+                    <value>Laudantium ipsum stract omnis voluptatem</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </tipo>
+                <data_nascimento name="p_data_nascimento" type="number" min="" max="" calculation="false" mathcal="" numberformat="" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false" java-type="">
+                    <label>Data Nascimento</label>
+                    <value>31</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </data_nascimento>
+                <email name="p_email" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Email</label>
+                    <value>Dolor sit mollit labore mollit</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </email>
+                <dependente name="p_dependente" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Dependente</label>
+                    <value>Adipiscing lorem unde totam perspiciatis</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </dependente>
+                <hidden name="p_id_agregado_familiar" type="hidden" maxlength="250" java-type="int" tag="id_agregado_familiar">
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </hidden>
+            </fields>
+        </form_1>
+    </content>
+    <blockly>
+        <imports></imports>
+        <xml>
+            <block type="controller" id="controller" x="388" y="13"></block>
+        </xml>
+    </blockly>
+</rows>

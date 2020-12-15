@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP-Template/images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/lookupservicocuidado/LookupServicoCuidado.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP-Template/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>LookupServicoCuidado</page>
+    <app>sistema_cuidado_dependentes</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.sistema_cuidado_dependentes.pages</package_db>
+        <package_html>LookupServicoCuidado</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=93</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Pesquisa Dependentes</title>
+        <table_1 type="table" xml-type="table" gen-type="container" gen-group="true">
+            <fields>
+                <fwl_unidade_cuidado name="p_fwl_unidade_cuidado" type="text" maxlength="300" showLabel="true" align="left" lookup_parser="true" iskey="true" group_in="">
+                    <label>Unidade Cuidado</label>
+                </fwl_unidade_cuidado>
+                <fwl_localizacao name="p_fwl_localizacao" type="text" maxlength="300" showLabel="true" align="left" lookup_parser="false" iskey="true" group_in="">
+                    <label>Localização</label>
+                </fwl_localizacao>
+                <fwl_contacto name="p_fwl_contacto" type="text" maxlength="300" showLabel="true" align="left" lookup_parser="false" iskey="true" group_in="">
+                    <label>Contacto</label>
+                </fwl_contacto>
+                <fwl_id_unidade_cuidado name="p_fwl_id_unidade_cuidado" type="hidden" maxlength="30" showLabel="true" iskey="true" group_in="" java-type="Integer" tag="fwl_id_unidade_cuidado"/>
+                <fwl_codigo name="p_fwl_codigo" type="hidden" maxlength="30" showLabel="true" iskey="true" group_in="" java-type="" tag="fwl_codigo"/>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <fwl_unidade_cuidado name="p_fwl_unidade_cuidado">Labore totam unde labore stract</fwl_unidade_cuidado>
+                        <fwl_localizacao name="p_fwl_localizacao">Magna deserunt lorem officia mollit</fwl_localizacao>
+                        <fwl_contacto name="p_fwl_contacto">Accusantium sit aperiam anim voluptatem</fwl_contacto>
+                        <fwl_id_unidade_cuidado name="p_fwl_id_unidade_cuidado" tag="fwl_id_unidade_cuidado">hidden-da9e_45e6</fwl_id_unidade_cuidado>
+                        <fwl_codigo name="p_fwl_codigo" tag="fwl_codigo">hidden-3fa2_3949</fwl_codigo>
+                    </row>
+                    <row>
+                        <fwl_unidade_cuidado name="p_fwl_unidade_cuidado">Rem unde lorem totam laudantium</fwl_unidade_cuidado>
+                        <fwl_localizacao name="p_fwl_localizacao">Adipiscing totam voluptatem sit doloremque</fwl_localizacao>
+                        <fwl_contacto name="p_fwl_contacto">Adipiscing laudantium totam adipiscing aliqua</fwl_contacto>
+                        <fwl_id_unidade_cuidado name="p_fwl_id_unidade_cuidado" tag="fwl_id_unidade_cuidado">hidden-2507_8527</fwl_id_unidade_cuidado>
+                        <fwl_codigo name="p_fwl_codigo" tag="fwl_codigo">hidden-7739_7c2b</fwl_codigo>
+                    </row>
+                    <row>
+                        <fwl_unidade_cuidado name="p_fwl_unidade_cuidado">Officia iste stract totam magna</fwl_unidade_cuidado>
+                        <fwl_localizacao name="p_fwl_localizacao">Ut amet ut unde magna</fwl_localizacao>
+                        <fwl_contacto name="p_fwl_contacto">Stract unde lorem amet sit</fwl_contacto>
+                        <fwl_id_unidade_cuidado name="p_fwl_id_unidade_cuidado" tag="fwl_id_unidade_cuidado">hidden-dd27_a6e3</fwl_id_unidade_cuidado>
+                        <fwl_codigo name="p_fwl_codigo" tag="fwl_codigo">hidden-9448_34a0</fwl_codigo>
+                    </row>
+                    <row>
+                        <fwl_unidade_cuidado name="p_fwl_unidade_cuidado">Deserunt amet natus mollit adipiscing</fwl_unidade_cuidado>
+                        <fwl_localizacao name="p_fwl_localizacao">Rem voluptatem officia unde natus</fwl_localizacao>
+                        <fwl_contacto name="p_fwl_contacto">Natus anim stract elit unde</fwl_contacto>
+                        <fwl_id_unidade_cuidado name="p_fwl_id_unidade_cuidado" tag="fwl_id_unidade_cuidado">hidden-e376_6d4a</fwl_id_unidade_cuidado>
+                        <fwl_codigo name="p_fwl_codigo" tag="fwl_codigo">hidden-9207_1236</fwl_codigo>
+                    </row>
+                    <row>
+                        <fwl_unidade_cuidado name="p_fwl_unidade_cuidado">Laudantium aliqua stract deserunt omnis</fwl_unidade_cuidado>
+                        <fwl_localizacao name="p_fwl_localizacao">Lorem sed rem labore laudantium</fwl_localizacao>
+                        <fwl_contacto name="p_fwl_contacto">Sit mollit aperiam voluptatem mollit</fwl_contacto>
+                        <fwl_id_unidade_cuidado name="p_fwl_id_unidade_cuidado" tag="fwl_id_unidade_cuidado">hidden-b992_d906</fwl_id_unidade_cuidado>
+                        <fwl_codigo name="p_fwl_codigo" tag="fwl_codigo">hidden-281d_8f09</fwl_codigo>
+                    </row>
+                </value>
+            </table>
+        </table_1>
+        <sectionheader_1 type="sectionheader" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <sectionheader_1_text type="text" name="p_sectionheader_1_text" persist="true" maxlength="4000">
+                    <value>
+                        <![CDATA[Sectionheader]]>
+                    </value>
+                </sectionheader_1_text>
+            </fields>
+        </sectionheader_1>
+        <toolsbar_1 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group="">
+            <item type="specific" code="" rel="toolsbar_1_button_1" refresh_components="">
+                <title>Button</title>
+                <app>sistema_cuidado_dependentes</app>
+                <page>LookupServicoCuidado</page>
+                <link>index</link>
+                <target>_blank</target>
+                <img>primary|fa-angle-right</img>
+                <preview>../images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/lookupservicocuidado/LookupServicoCuidado.xml</preview>
+            </item>
+        </toolsbar_1>
+    </content>
+    <blockly>
+        <imports></imports>
+        <xml>
+            <block type="controller" id="controller" x="388" y="13"></block>
+        </xml>
+    </blockly>
+</rows>

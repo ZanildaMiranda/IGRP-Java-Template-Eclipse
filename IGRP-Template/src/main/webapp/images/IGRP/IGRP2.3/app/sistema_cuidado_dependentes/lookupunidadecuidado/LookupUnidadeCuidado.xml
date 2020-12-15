@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP-Template/images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/lookupunidadecuidado/LookupUnidadeCuidado.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP-Template/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>LookupUnidadeCuidado</page>
+    <app>sistema_cuidado_dependentes</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.sistema_cuidado_dependentes.pages</package_db>
+        <package_html>LookupUnidadeCuidado</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=92</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Pesquisa Unidade de Cuidado</title>
+        <table_1 type="table" xml-type="table" gen-type="container" gen-group="true">
+            <fields>
+                <fwl_unidade_cuidado name="p_fwl_unidade_cuidado" type="text" maxlength="300" showLabel="true" align="left" lookup_parser="true" iskey="true" group_in="">
+                    <label>Unidade Cuidado</label>
+                </fwl_unidade_cuidado>
+                <fwl_localizacao name="p_fwl_localizacao" type="text" maxlength="300" showLabel="true" align="left" lookup_parser="false" iskey="true" group_in="">
+                    <label>Localização</label>
+                </fwl_localizacao>
+                <fwl_contacto name="p_fwl_contacto" type="text" maxlength="300" showLabel="true" align="left" lookup_parser="false" iskey="true" group_in="">
+                    <label>Contacto</label>
+                </fwl_contacto>
+                <fwl_id_unidade_cuidado name="p_fwl_id_unidade_cuidado" type="hidden" maxlength="30" showLabel="true" iskey="true" group_in="" java-type="Integer" tag="fwl_id_unidade_cuidado"/>
+                <fwl_codigo name="p_fwl_codigo" type="hidden" maxlength="30" showLabel="true" iskey="true" group_in="" java-type="" tag="fwl_codigo"/>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <fwl_unidade_cuidado name="p_fwl_unidade_cuidado">Officia ut doloremque ut aperiam</fwl_unidade_cuidado>
+                        <fwl_localizacao name="p_fwl_localizacao">Sit laudantium sit ipsum sit</fwl_localizacao>
+                        <fwl_contacto name="p_fwl_contacto">Voluptatem natus perspiciatis ut consectetur</fwl_contacto>
+                        <fwl_id_unidade_cuidado name="p_fwl_id_unidade_cuidado" tag="fwl_id_unidade_cuidado">hidden-db08_591a</fwl_id_unidade_cuidado>
+                        <fwl_codigo name="p_fwl_codigo" tag="fwl_codigo">hidden-efd7_0c14</fwl_codigo>
+                    </row>
+                    <row>
+                        <fwl_unidade_cuidado name="p_fwl_unidade_cuidado">Amet mollit sed adipiscing unde</fwl_unidade_cuidado>
+                        <fwl_localizacao name="p_fwl_localizacao">Magna deserunt laudantium anim officia</fwl_localizacao>
+                        <fwl_contacto name="p_fwl_contacto">Perspiciatis consectetur totam doloremque anim</fwl_contacto>
+                        <fwl_id_unidade_cuidado name="p_fwl_id_unidade_cuidado" tag="fwl_id_unidade_cuidado">hidden-bd76_7c30</fwl_id_unidade_cuidado>
+                        <fwl_codigo name="p_fwl_codigo" tag="fwl_codigo">hidden-af48_5f2f</fwl_codigo>
+                    </row>
+                    <row>
+                        <fwl_unidade_cuidado name="p_fwl_unidade_cuidado">Labore adipiscing rem natus magna</fwl_unidade_cuidado>
+                        <fwl_localizacao name="p_fwl_localizacao">Voluptatem adipiscing lorem elit mollit</fwl_localizacao>
+                        <fwl_contacto name="p_fwl_contacto">Lorem mollit doloremque lorem perspiciatis</fwl_contacto>
+                        <fwl_id_unidade_cuidado name="p_fwl_id_unidade_cuidado" tag="fwl_id_unidade_cuidado">hidden-91cc_9202</fwl_id_unidade_cuidado>
+                        <fwl_codigo name="p_fwl_codigo" tag="fwl_codigo">hidden-20a1_de73</fwl_codigo>
+                    </row>
+                    <row>
+                        <fwl_unidade_cuidado name="p_fwl_unidade_cuidado">Unde magna voluptatem iste accusantium</fwl_unidade_cuidado>
+                        <fwl_localizacao name="p_fwl_localizacao">Stract laudantium deserunt aliqua ut</fwl_localizacao>
+                        <fwl_contacto name="p_fwl_contacto">Stract omnis sit deserunt iste</fwl_contacto>
+                        <fwl_id_unidade_cuidado name="p_fwl_id_unidade_cuidado" tag="fwl_id_unidade_cuidado">hidden-9c78_b443</fwl_id_unidade_cuidado>
+                        <fwl_codigo name="p_fwl_codigo" tag="fwl_codigo">hidden-8c0b_ce52</fwl_codigo>
+                    </row>
+                    <row>
+                        <fwl_unidade_cuidado name="p_fwl_unidade_cuidado">Aliqua natus aliqua amet omnis</fwl_unidade_cuidado>
+                        <fwl_localizacao name="p_fwl_localizacao">Voluptatem deserunt officia lorem totam</fwl_localizacao>
+                        <fwl_contacto name="p_fwl_contacto">Omnis ipsum laudantium totam natus</fwl_contacto>
+                        <fwl_id_unidade_cuidado name="p_fwl_id_unidade_cuidado" tag="fwl_id_unidade_cuidado">hidden-fa4c_e6c2</fwl_id_unidade_cuidado>
+                        <fwl_codigo name="p_fwl_codigo" tag="fwl_codigo">hidden-ba6e_a2e1</fwl_codigo>
+                    </row>
+                </value>
+            </table>
+        </table_1>
+    </content>
+    <blockly>
+        <imports>
+            <import type="listar">Listar</import>
+            <import type="dao">TblUnidadeCuidado</import>
+        </imports>
+        <xml>
+            <block type="controller" id="controller" x="388" y="13">
+                <statement name="index">
+                    <block type="comment_code" id="{uPr_hkFZA!(?W1h7otS">
+                        <statement name="value1">
+                            <block type="listar_table_1" id="table_1" inline="true">
+                                <mutation pxchecked="false" count="0"></mutation>
+                                <field name="dao">TblUnidadeCuidado</field>
+                                <field name="find">TODOSS</field>
+                                <field name="FILL">FALSE</field>
+                                <statement name="value2">
+                                    <block type="rowtablefwl_unidade_cuidado" id="String::fwl_unidade_cuidado">
+                                        <value name="fields_model">
+                                            <block type="get-dao-TblUnidadeCuidado" id="RZw6i.6~SVU,aVdFo=MJ">
+                                                <mutation hover_type="String::nome"></mutation>
+                                                <field name="DAO_FIELD">String::nome</field>
+                                            </block>
+                                        </value>
+                                        <next>
+                                            <block type="rowtablefwl_localizacao" id="String::fwl_localizacao">
+                                                <value name="fields_model">
+                                                    <block type="get-dao-TblUnidadeCuidado" id="p4;ZxM,gEkGn]??4JBHg">
+                                                        <mutation hover_type="String::localidade"></mutation>
+                                                        <field name="DAO_FIELD">String::localidade</field>
+                                                    </block>
+                                                </value>
+                                                <next>
+                                                    <block type="rowtablefwl_contacto" id="String::fwl_contacto">
+                                                        <value name="fields_model">
+                                                            <block type="get-dao-TblUnidadeCuidado" id="hK+i|9{E/~F@/hbZB=c[">
+                                                                <mutation hover_type="Integer::telefone"></mutation>
+                                                                <field name="DAO_FIELD">Integer::telefone</field>
+                                                            </block>
+                                                        </value>
+                                                        <next>
+                                                            <block type="rowtablefwl_id_unidade_cuidado" id="Integer::fwl_id_unidade_cuidado">
+                                                                <value name="fields_model">
+                                                                    <block type="get-dao-TblUnidadeCuidado" id="Wv={Kt+Ngmq-oV|?`vw#">
+                                                                        <mutation hover_type="Integer::idUnidadeCuidado"></mutation>
+                                                                        <field name="DAO_FIELD">Integer::idUnidadeCuidado</field>
+                                                                    </block>
+                                                                </value>
+                                                                <next>
+                                                                    <block type="rowtablefwl_codigo" id="String::fwl_codigo">
+                                                                        <value name="fields_model">
+                                                                            <block type="get-dao-TblUnidadeCuidado" id="~|w]7qkG=n.XXR+(Sg%n">
+                                                                                <mutation hover_type="Integer::codigo"></mutation>
+                                                                                <field name="DAO_FIELD">Integer::codigo</field>
+                                                                            </block>
+                                                                        </value>
+                                                                    </block>
+                                                                </next>
+                                                            </block>
+                                                        </next>
+                                                    </block>
+                                                </next>
+                                            </block>
+                                        </next>
+                                    </block>
+                                </statement>
+                            </block>
+                        </statement>
+                    </block>
+                </statement>
+            </block>
+        </xml>
+    </blockly>
+</rows>

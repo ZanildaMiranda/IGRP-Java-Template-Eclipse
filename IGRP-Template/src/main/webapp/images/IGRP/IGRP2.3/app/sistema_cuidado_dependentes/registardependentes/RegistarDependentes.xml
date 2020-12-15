@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP-Template/images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/registardependentes/RegistarDependentes.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP-Template/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>RegistarDependentes</page>
+    <app>sistema_cuidado_dependentes</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.sistema_cuidado_dependentes.pages</package_db>
+        <package_html>RegistarDependentes</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=90</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Registar dependentes</title>
+        <sectionheader_1 type="sectionheader" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <sectionheader_1_text type="text" name="p_sectionheader_1_text" persist="true" maxlength="4000">
+                    <value>
+                        <![CDATA[<p>Registo de Dependente</p>
+]]>
+                    </value>
+                </sectionheader_1_text>
+            </fields>
+        </sectionheader_1>
+        <toolsbar_1 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group="">
+            <item type="specific" code="" rel="registar" refresh_components="">
+                <title>Registar</title>
+                <app>sistema_cuidado_dependentes</app>
+                <page>RegistarDependentes</page>
+                <link>index</link>
+                <target>submit</target>
+                <img>success|fa-save</img>
+                <preview>../images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/registardependentes/RegistarDependentes.xml</preview>
+            </item>
+        </toolsbar_1>
+        <tabcontent_2 type="tabcontent" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <dependentes name="p_dependentes" type="button" request_fields="" target_fields="" closerefresh="false" refresh_components="" refresh_submit="false" adbcli="" custom_return="false" iconColor="#333" iconClass="" img="fa-angle-right" maxlength="50">
+                    <label>Dependentes</label>
+                    <value/>
+                </dependentes>
+                <detalhe_dependente name="p_detalhe_dependente" type="button" request_fields="" target_fields="" closerefresh="false" refresh_components="" refresh_submit="false" adbcli="" custom_return="false" iconColor="#333" iconClass="" img="fa-angle-right" maxlength="50">
+                    <label>Detalhe_Dependente</label>
+                    <value/>
+                </detalhe_dependente>
+            </fields>
+        </tabcontent_2>
+        <form_1 type="form" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <nome name="p_nome" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Nome</label>
+                    <value>Stract unde voluptatem sed rem</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </nome>
+                <morada name="p_morada" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Morada</label>
+                    <value>Adipiscing elit natus lorem laudantium</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </morada>
+                <telefone name="p_telefone" type="number" min="" max="" calculation="false" mathcal="" numberformat="" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false" java-type="">
+                    <label>Telefone</label>
+                    <value>219</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </telefone>
+                <sexo name="p_sexo" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Sexo</label>
+                    <value>Sed laudantium labore aperiam magna</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </sexo>
+                <data_nascimento name="p_data_nascimento" type="date" range="false" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false" class="primary">
+                    <label>Data Nascimento</label>
+                    <value>03-06-2016</value>
+                </data_nascimento>
+                <grau_de_dependencia name="p_grau_de_dependencia" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Grau de Dependência</label>
+                    <value>Accusantium sit unde perspiciatis officia</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </grau_de_dependencia>
+                <nacionalidade name="p_nacionalidade" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Nacionalidade</label>
+                    <value>Unde iste unde officia stract</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </nacionalidade>
+                <profissao name="p_profissao" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Profissão</label>
+                    <value>Officia unde dolor magna rem</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </profissao>
+                <estado_civil name="p_estado_civil" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Estado Civil</label>
+                    <value>Sit elit aliqua omnis rem</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </estado_civil>
+                <autocuidado name="p_autocuidado" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Autocuidado</label>
+                    <value>Magna ipsum ut sit ut</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </autocuidado>
+                <email name="p_email" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Email</label>
+                    <value>Amet consectetur iste unde stract</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </email>
+                <cuidador name="p_cuidador" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Cuidador</label>
+                    <value>Totam accusantium voluptatem anim magna</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </cuidador>
+                <hidden name="p_id_dependente" type="hidden" maxlength="250" java-type="Integer" tag="id_dependente"/>
+            </fields>
+        </form_1>
+        <form_2 type="form" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <parente name="p_parente" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Parente</label>
+                    <value>Adipiscing lorem ut ipsum mollit</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </parente>
+                <classe_dependencia name="p_classe_dependencia" type="select" multiple="false" tags="false" domain="" maxlength="250" required="true" change="false" disabled="false" right="false" java-type="">
+                    <label>Classe Dependencia</label>
+                    <list>
+                        <option/>
+                        <option>
+                            <text>Option 1</text>
+                            <value>1</value>
+                        </option>
+                        <option>
+                            <text>Option 2</text>
+                            <value>2</value>
+                        </option>
+                        <option>
+                            <text>Option 3</text>
+                            <value>3</value>
+                        </option>
+                        <option>
+                            <text>Option 4</text>
+                            <value>4</value>
+                        </option>
+                    </list>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </classe_dependencia>
+                <origem name="p_origem" type="select" multiple="false" tags="false" domain="" maxlength="250" required="true" change="false" disabled="false" right="false" java-type="">
+                    <label>Origem</label>
+                    <list>
+                        <option/>
+                        <option>
+                            <text>Option 1</text>
+                            <value>1</value>
+                        </option>
+                        <option>
+                            <text>Option 2</text>
+                            <value>2</value>
+                        </option>
+                        <option>
+                            <text>Option 3</text>
+                            <value>3</value>
+                        </option>
+                        <option>
+                            <text>Option 4</text>
+                            <value>4</value>
+                        </option>
+                    </list>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </origem>
+                <pensionista name="p_pensionista" type="select" multiple="false" tags="false" domain="" maxlength="250" required="false" change="false" disabled="false" right="false" java-type="">
+                    <label>Pensionista</label>
+                    <list>
+                        <option/>
+                        <option>
+                            <text>Option 1</text>
+                            <value>1</value>
+                        </option>
+                        <option>
+                            <text>Option 2</text>
+                            <value>2</value>
+                        </option>
+                        <option>
+                            <text>Option 3</text>
+                            <value>3</value>
+                        </option>
+                        <option>
+                            <text>Option 4</text>
+                            <value>4</value>
+                        </option>
+                    </list>
+                </pensionista>
+                <habiliatacao_literaria name="p_habiliatacao_literaria" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Habiliatacao Literaria</label>
+                    <value>Dolor omnis rem officia sed</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </habiliatacao_literaria>
+                <instalacao_dependencia name="p_instalacao_dependencia" type="select" multiple="false" tags="false" domain="" maxlength="250" required="true" change="false" disabled="false" right="false" java-type="">
+                    <label>Instalacao Dependencia</label>
+                    <list>
+                        <option/>
+                        <option>
+                            <text>Option 1</text>
+                            <value>1</value>
+                        </option>
+                        <option>
+                            <text>Option 2</text>
+                            <value>2</value>
+                        </option>
+                        <option>
+                            <text>Option 3</text>
+                            <value>3</value>
+                        </option>
+                        <option>
+                            <text>Option 4</text>
+                            <value>4</value>
+                        </option>
+                    </list>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </instalacao_dependencia>
+                <tempo_de_dependencia name="p_tempo_de_dependencia" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Tempo de Dependencia</label>
+                    <value>Dolor ut accusantium adipiscing ut</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </tempo_de_dependencia>
+                <hidden name="p_id_detalhe_dependente" type="hidden" maxlength="250" java-type="Integer" tag="id_detalhe_dependente">
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </hidden>
+            </fields>
+        </form_2>
+    </content>
+    <blockly>
+        <imports>
+            <import type="dao">TblDependente</import>
+            <import type="dao">TblCuidador</import>
+            <import type="fields">Date</import>
+        </imports>
+        <xml>
+            <block type="controller" id="controller" x="263" y="-13">
+                <statement name="index">
+                    <block type="formuu_form_1" id="9DoYHfT5~eI:EQoVGRc[" inline="true">
+                        <mutation pxchecked="false" count="0"></mutation>
+                        <field name="dao">TblDependente</field>
+                        <value name="get_pa">
+                            <block type="core_get_param" id="!R6n2/L)(U@q1ejnr5h_">
+                                <field name="param">id_dependente_tbl</field>
+                            </block>
+                        </value>
+                        <statement name="value2">
+                            <block type="model_form_nome" id="String::nome">
+                                <value name="value1">
+                                    <block type="get-dao-TblDependente" id="?*.qh7qa.gpGGqit{Djn">
+                                        <mutation hover_type="String::nome"></mutation>
+                                        <field name="DAO_FIELD">String::nome</field>
+                                    </block>
+                                </value>
+                                <next>
+                                    <block type="model_form_morada" id="String::morada">
+                                        <value name="value1">
+                                            <block type="get-dao-TblDependente" id="-)bEHa5^0]]?tIE6W^Qp">
+                                                <mutation hover_type="String::morada"></mutation>
+                                                <field name="DAO_FIELD">String::morada</field>
+                                            </block>
+                                        </value>
+                                        <next>
+                                            <block type="model_form_telefone" id="Integer::telefone">
+                                                <value name="value1">
+                                                    <block type="get-dao-TblDependente" id="3Ec{vlFU|rce`iMlwN`2">
+                                                        <mutation hover_type="Integer::telefone"></mutation>
+                                                        <field name="DAO_FIELD">Integer::telefone</field>
+                                                    </block>
+                                                </value>
+                                                <next>
+                                                    <block type="model_form_sexo" id="String::sexo">
+                                                        <value name="value1">
+                                                            <block type="get-dao-TblDependente" id="XRE@uoNw~Rms-B]tExC}">
+                                                                <mutation hover_type="String::sexo"></mutation>
+                                                                <field name="DAO_FIELD">String::sexo</field>
+                                                            </block>
+                                                        </value>
+                                                        <next>
+                                                            <block type="model_form_data_nascimento" id="String::data_nascimento">
+                                                                <value name="value1">
+                                                                    <block type="get-dao-TblDependente" id="mn;t1=8a}:YSl9G/O=Lv">
+                                                                        <mutation hover_type="Date::dataNascimento"></mutation>
+                                                                        <field name="DAO_FIELD">Date::dataNascimento</field>
+                                                                    </block>
+                                                                </value>
+                                                                <next>
+                                                                    <block type="model_form_grau_de_dependencia" id="String::grau_de_dependencia">
+                                                                        <value name="value1">
+                                                                            <block type="get-dao-TblDependente" id="DG7|1LgG6vRJ:c/sd^}%">
+                                                                                <mutation hover_type="String::grauDependencia"></mutation>
+                                                                                <field name="DAO_FIELD">String::grauDependencia</field>
+                                                                            </block>
+                                                                        </value>
+                                                                        <next>
+                                                                            <block type="model_form_nacionalidade" id="String::nacionalidade">
+                                                                                <value name="value1">
+                                                                                    <block type="get-dao-TblDependente" id="|k*Mt_5bNrQ_k5+k_k9.">
+                                                                                        <mutation hover_type="String::nacionalidade"></mutation>
+                                                                                        <field name="DAO_FIELD">String::nacionalidade</field>
+                                                                                    </block>
+                                                                                </value>
+                                                                                <next>
+                                                                                    <block type="model_form_profissao" id="String::profissao">
+                                                                                        <value name="value1">
+                                                                                            <block type="get-dao-TblDependente" id="i/kgD~h2n{%O;BsB#oYS">
+                                                                                                <mutation hover_type="String::profissao"></mutation>
+                                                                                                <field name="DAO_FIELD">String::profissao</field>
+                                                                                            </block>
+                                                                                        </value>
+                                                                                        <next>
+                                                                                            <block type="model_form_estado_civil" id="String::estado_civil">
+                                                                                                <value name="value1">
+                                                                                                    <block type="get-dao-TblDependente" id=";qy)NwPf^`TH,kB|TiOP">
+                                                                                                        <mutation hover_type="String::estadoCivil"></mutation>
+                                                                                                        <field name="DAO_FIELD">String::estadoCivil</field>
+                                                                                                    </block>
+                                                                                                </value>
+                                                                                                <next>
+                                                                                                    <block type="model_form_autocuidado" id="String::autocuidado">
+                                                                                                        <value name="value1">
+                                                                                                            <block type="get-dao-TblDependente" id=":?W_)IYCZsnBvywj(KQp">
+                                                                                                                <mutation hover_type="String::autocuidado"></mutation>
+                                                                                                                <field name="DAO_FIELD">String::autocuidado</field>
+                                                                                                            </block>
+                                                                                                        </value>
+                                                                                                        <next>
+                                                                                                            <block type="model_form_email" id="String::email">
+                                                                                                                <value name="value1">
+                                                                                                                    <block type="get-dao-TblDependente" id="Clhro6ntMY)0)f,c{irU">
+                                                                                                                        <mutation hover_type="String::email"></mutation>
+                                                                                                                        <field name="DAO_FIELD">String::email</field>
+                                                                                                                    </block>
+                                                                                                                </value>
+                                                                                                                <next>
+                                                                                                                    <block type="model_form_cuidador" id="String::cuidador">
+                                                                                                                        <value name="value1">
+                                                                                                                            <block type="get-dao-TblDependente" id="xMxn18XF_Z[q/`VLHIj#">
+                                                                                                                                <mutation hover_type="TblCuidador_FK#::idCuidadorFk"></mutation>
+                                                                                                                                <field name="DAO_FIELD">TblCuidador_FK#::idCuidadorFk</field>
+                                                                                                                                <value name="dao_rela">
+                                                                                                                                    <block type="get-dao-TblCuidador" id="in=8^l/ypKz+Wa.zgq~V">
+                                                                                                                                        <mutation hover_type="String::nome"></mutation>
+                                                                                                                                        <field name="DAO_FIELD">String::nome</field>
+                                                                                                                                    </block>
+                                                                                                                                </value>
+                                                                                                                            </block>
+                                                                                                                        </value>
+                                                                                                                        <next>
+                                                                                                                            <block type="model_form_id_dependente" id="Integer::id_dependente">
+                                                                                                                                <value name="value1">
+                                                                                                                                    <block type="get-dao-TblDependente" id="%BH0mQ*lP+{z=,GHUWq)">
+                                                                                                                                        <mutation hover_type="Integer::idDependente"></mutation>
+                                                                                                                                        <field name="DAO_FIELD">Integer::idDependente</field>
+                                                                                                                                    </block>
+                                                                                                                                </value>
+                                                                                                                                <next>
+                                                                                                                                    <block type="add_isedit" id=".A#)OFQ+V6+-Du8:]zT,">
+                                                                                                                                        <field name="button">registar</field>
+                                                                                                                                    </block>
+                                                                                                                                </next>
+                                                                                                                            </block>
+                                                                                                                        </next>
+                                                                                                                    </block>
+                                                                                                                </next>
+                                                                                                            </block>
+                                                                                                        </next>
+                                                                                                    </block>
+                                                                                                </next>
+                                                                                            </block>
+                                                                                        </next>
+                                                                                    </block>
+                                                                                </next>
+                                                                            </block>
+                                                                        </next>
+                                                                    </block>
+                                                                </next>
+                                                            </block>
+                                                        </next>
+                                                    </block>
+                                                </next>
+                                            </block>
+                                        </next>
+                                    </block>
+                                </next>
+                            </block>
+                        </statement>
+                    </block>
+                </statement>
+            </block>
+        </xml>
+    </blockly>
+</rows>

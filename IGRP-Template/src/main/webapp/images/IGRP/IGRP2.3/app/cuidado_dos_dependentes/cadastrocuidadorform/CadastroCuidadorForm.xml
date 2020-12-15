@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP-Template/images/IGRP/IGRP2.3/app/cuidado_dos_dependentes/cadastrocuidadorform/CadastroCuidadorForm.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP-Template/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>CadastroCuidadorForm</page>
+    <app>cuidado_dos_dependentes</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.cuidado_dos_dependentes.pages</package_db>
+        <package_html>CadastroCuidadorForm</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=97</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Cadastro Cuidador</title>
+        <tabcontent_1 type="tabcontent" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <tab_dados_de_cuidador name="p_tab_dados_de_cuidador" type="button" request_fields="" target_fields="" closerefresh="false" refresh_components="" refresh_submit="false" adbcli="" custom_return="false" iconColor="#333" iconClass="" img="fa-user" maxlength="50">
+                    <label>Dados de Cuidador</label>
+                    <value/>
+                </tab_dados_de_cuidador>
+                <contactos name="p_contactos" type="button" request_fields="" target_fields="" closerefresh="false" refresh_components="" refresh_submit="false" adbcli="" custom_return="false" iconColor="#333" iconClass="" img="fa-volume-control-phone" maxlength="50">
+                    <label>Contactos</label>
+                    <value/>
+                </contactos>
+                <documentos name="p_documentos" type="button" request_fields="" target_fields="" closerefresh="false" refresh_components="" refresh_submit="false" adbcli="" custom_return="false" iconColor="#333" iconClass="" img="fa-archive" maxlength="50">
+                    <label>Documentos</label>
+                    <value/>
+                </documentos>
+            </fields>
+        </tabcontent_1>
+        <toolsbar_1 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group="">
+            <item type="specific" code="" rel="guardar" refresh_components="">
+                <title>Guardar</title>
+                <app>cuidado_dos_dependentes</app>
+                <page>CadastroCuidadorForm</page>
+                <link>index</link>
+                <target>submit</target>
+                <img>primary|fa-floppy-o</img>
+                <preview>../images/IGRP/IGRP2.3/app/cuidado_dos_dependentes/cadastrocuidadorform/CadastroCuidadorForm.xml</preview>
+            </item>
+        </toolsbar_1>
+        <form_1 type="form" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <dados_cuidador name="p_dados_cuidador" type="separator" maxlength="250" placeholder="" desclabel="false" right="false">
+                    <label>Dados Cuidador</label>
+                </dados_cuidador>
+                <nome name="p_nome" type="text" maxlength="500" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Nome Completo</label>
+                    <value>Officia iste accusantium laudantium omnis</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </nome>
+                <tipo_de_cuidador name="p_tipo_de_cuidador" type="select" multiple="false" tags="false" domain="DM_TipoCuidador « cuidado_dos_dependentes" maxlength="500" required="true" change="false" disabled="false" right="false" java-type="String">
+                    <label>Tipo de Cuidador</label>
+                    <list>
+                        <option/>
+                        <option>
+                            <text>Formal</text>
+                            <value>F</value>
+                        </option>
+                        <option>
+                            <text>InFormal</text>
+                            <value>IF</value>
+                        </option>
+                    </list>
+                </tipo_de_cuidador>
+                <data_nascimento name="p_data_nascimento" type="date" range="false" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false" class="primary">
+                    <label>Data Nascimento</label>
+                    <value>08-07-2010</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </data_nascimento>
+                <nacionalidade name="p_nacionalidade" type="text" maxlength="300" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Nacionalidade</label>
+                    <value>Doloremque deserunt officia consectetur anim</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </nacionalidade>
+                <sexo name="p_sexo" type="radiolist" domain="DM_SEXO « cuidado_dos_dependentes" maxlength="300" required="true" change="false" readonly="false" disabled="false" child_size="6" right="false" java-type="String">
+                    <label>Sexo</label>
+                    <list>
+                        <option>
+                            <text>Feminino</text>
+                            <value>F</value>
+                        </option>
+                        <option>
+                            <text>Masculino</text>
+                            <value>M</value>
+                        </option>
+                    </list>
+                </sexo>
+                <habilitacao_literaria name="p_habilitacao_literaria" type="select" multiple="false" tags="false" domain="DM_Habilitacao « cuidado_dos_dependentes" maxlength="300" required="true" change="false" disabled="false" right="false" java-type="String">
+                    <label>Habilitação Literária</label>
+                    <list>
+                        <option/>
+                        <option>
+                            <text>Licenciatura</text>
+                            <value>Lic</value>
+                        </option>
+                        <option>
+                            <text>Mestrado</text>
+                            <value>Mes</value>
+                        </option>
+                        <option>
+                            <text>12º Ano</text>
+                            <value>12</value>
+                        </option>
+                        <option>
+                            <text>Formação de Cuidadores dos Dependentes</text>
+                            <value>FCD</value>
+                        </option>
+                        <option>
+                            <text>Não sabe Ler ou Escrever</text>
+                            <value>NSL</value>
+                        </option>
+                    </list>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </habilitacao_literaria>
+                <estado_civil name="p_estado_civil" type="select" multiple="false" tags="false" domain="DM_EstadoCivil « cuidado_dos_dependentes" maxlength="300" required="true" change="false" disabled="false" right="false" java-type="">
+                    <label>Estado Civíl</label>
+                    <list>
+                        <option/>
+                        <option>
+                            <text>Casado</text>
+                            <value>CAS</value>
+                        </option>
+                        <option>
+                            <text>Solteiro</text>
+                            <value>SOL</value>
+                        </option>
+                        <option>
+                            <text>Viúvo</text>
+                            <value>V</value>
+                        </option>
+                        <option>
+                            <text>União de Facto</text>
+                            <value>UF</value>
+                        </option>
+                    </list>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </estado_civil>
+                <profissao name="p_profissao" type="text" maxlength="300" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Profissão</label>
+                    <value>Doloremque voluptatem elit ut consectetur</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </profissao>
+            </fields>
+        </form_1>
+        <separatorlist_3 type="separatorlist" xml-type="separatorlist" gen-clean="true" gen-type="container" gen-group="true">
+            <fields>
+                <tipo_de_contacto name="p_tipo_de_contacto" type="select" multiple="false" tags="false" domain="DM_TipoContacto « cuidado_dos_dependentes" maxlength="300" required="true" change="false" disabled="false" right="false" java-type="String" desc="true">
+                    <label>Tipo de Contacto</label>
+                    <list>
+                        <option/>
+                        <option>
+                            <text>Email</text>
+                            <value>E</value>
+                        </option>
+                        <option>
+                            <text>Telefone</text>
+                            <value>TEL</value>
+                        </option>
+                        <option>
+                            <text>Móvel</text>
+                            <value>MOV</value>
+                        </option>
+                        <option>
+                            <text>Morada</text>
+                            <value>M</value>
+                        </option>
+                    </list>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </tipo_de_contacto>
+                <contacto name="p_contacto" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false" desc="true">
+                    <label>Contacto</label>
+                    <value>Mollit rem sit officia doloremque</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </contacto>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <tipo_de_contacto name="p_tipo_de_contacto" desc="true">2</tipo_de_contacto>
+                        <tipo_de_contacto_desc name="p_tipo_de_contacto_desc">2</tipo_de_contacto_desc>
+                        <contacto name="p_contacto" desc="true">Stract sed labore unde sed</contacto>
+                        <contacto_desc name="p_contacto_desc">Stract sed labore unde sed</contacto_desc>
+                    </row>
+                    <row>
+                        <tipo_de_contacto name="p_tipo_de_contacto" desc="true">2</tipo_de_contacto>
+                        <tipo_de_contacto_desc name="p_tipo_de_contacto_desc">2</tipo_de_contacto_desc>
+                        <contacto name="p_contacto" desc="true">Anim sit ipsum magna lorem</contacto>
+                        <contacto_desc name="p_contacto_desc">Anim sit ipsum magna lorem</contacto_desc>
+                    </row>
+                    <row>
+                        <tipo_de_contacto name="p_tipo_de_contacto" desc="true">2</tipo_de_contacto>
+                        <tipo_de_contacto_desc name="p_tipo_de_contacto_desc">2</tipo_de_contacto_desc>
+                        <contacto name="p_contacto" desc="true">Labore amet perspiciatis mollit natus</contacto>
+                        <contacto_desc name="p_contacto_desc">Labore amet perspiciatis mollit natus</contacto_desc>
+                    </row>
+                    <row>
+                        <tipo_de_contacto name="p_tipo_de_contacto" desc="true">2</tipo_de_contacto>
+                        <tipo_de_contacto_desc name="p_tipo_de_contacto_desc">2</tipo_de_contacto_desc>
+                        <contacto name="p_contacto" desc="true">Accusantium ipsum voluptatem totam labore</contacto>
+                        <contacto_desc name="p_contacto_desc">Accusantium ipsum voluptatem totam labore</contacto_desc>
+                    </row>
+                    <row>
+                        <tipo_de_contacto name="p_tipo_de_contacto" desc="true">2</tipo_de_contacto>
+                        <tipo_de_contacto_desc name="p_tipo_de_contacto_desc">2</tipo_de_contacto_desc>
+                        <contacto name="p_contacto" desc="true">Natus anim magna stract mollit</contacto>
+                        <contacto_desc name="p_contacto_desc">Natus anim magna stract mollit</contacto_desc>
+                    </row>
+                </value>
+            </table>
+        </separatorlist_3>
+        <separatorlist_4 type="separatorlist" xml-type="separatorlist" gen-clean="true" gen-type="container" gen-group="true">
+            <fields>
+                <tipo_identificacao name="p_tipo_identificacao" type="select" multiple="true" tags="false" domain="D_TipoIdentificacao « cuidado_dos_dependentes" maxlength="300" required="true" change="false" disabled="false" right="false" java-type="String" desc="true">
+                    <label>Tipo Identificação</label>
+                    <list>
+                        <option/>
+                        <option>
+                            <text>Bilhete de Identidade</text>
+                            <value>BI</value>
+                        </option>
+                        <option>
+                            <text>Cartão Nacional de Identificação</text>
+                            <value>CNI</value>
+                        </option>
+                        <option>
+                            <text>Passaporte</text>
+                            <value>PAS</value>
+                        </option>
+                        <option>
+                            <text>Célula</text>
+                            <value>C</value>
+                        </option>
+                        <option>
+                            <text>Seguro Social</text>
+                            <value>SEGS</value>
+                        </option>
+                        <option>
+                            <text>Número de Identificação Fiscal</text>
+                            <value>NIF</value>
+                        </option>
+                        <option>
+                            <text>Pensionista</text>
+                            <value>P</value>
+                        </option>
+                    </list>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </tipo_identificacao>
+                <numero name="p_numero" type="number" min="" max="" calculation="false" mathcal="" numberformat="" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false" java-type="" desc="true">
+                    <label>Número</label>
+                    <value>142</value>
+                </numero>
+                <data_emissao name="p_data_emissao" type="date" range="false" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false" class="primary" desc="true">
+                    <label>Data Emissão</label>
+                    <value>07-04-2017</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </data_emissao>
+                <data_de_validade name="p_data_de_validade" type="date" range="false" maxlength="250" required="false" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false" class="primary" desc="true">
+                    <label>Data de Validade</label>
+                    <value>05-06-2014</value>
+                </data_de_validade>
+                <vitalicio name="p_vitalicio" type="radiolist" domain="DM_Vitalicio « cuidado_dos_dependentes" maxlength="250" required="true" change="false" readonly="false" disabled="false" child_size="6" right="false" java-type="String" desc="true">
+                    <label>Vitalício</label>
+                    <list>
+                        <option>
+                            <text>Sim</text>
+                            <value>S</value>
+                        </option>
+                        <option>
+                            <text>Não</text>
+                            <value>N</value>
+                        </option>
+                    </list>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </vitalicio>
+                <entidade_emissora name="p_entidade_emissora" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false" desc="true">
+                    <label>Entidade Emissora</label>
+                    <value>Doloremque omnis labore omnis rem</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </entidade_emissora>
+                <ficheiro name="p_ficheiro" type="file" accept="" targetrend="" multiple="false" rendvalue="false" maxlength="2000" required="true" disabled="false" right="false" visible="false" class="primary" desc="true">
+                    <label>Ficheiro</label>
+                    <value/>
+                </ficheiro>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <tipo_identificacao name="p_tipo_identificacao" desc="true">12</tipo_identificacao>
+                        <tipo_identificacao_desc name="p_tipo_identificacao_desc">12</tipo_identificacao_desc>
+                        <numero name="p_numero" desc="true">124</numero>
+                        <numero_desc name="p_numero_desc">124</numero_desc>
+                        <data_emissao name="p_data_emissao" desc="true">07-03-2014</data_emissao>
+                        <data_emissao_desc name="p_data_emissao_desc">07-03-2014</data_emissao_desc>
+                        <data_de_validade name="p_data_de_validade" desc="true">05-06-2013</data_de_validade>
+                        <data_de_validade_desc name="p_data_de_validade_desc">05-06-2013</data_de_validade_desc>
+                        <vitalicio name="p_vitalicio" desc="true"/>
+                        <vitalicio_desc name="p_vitalicio_desc"/>
+                        <entidade_emissora name="p_entidade_emissora" desc="true">Laudantium labore sit mollit ipsum</entidade_emissora>
+                        <entidade_emissora_desc name="p_entidade_emissora_desc">Laudantium labore sit mollit ipsum</entidade_emissora_desc>
+                        <ficheiro name="p_ficheiro" desc="true" visible="false"/>
+                        <ficheiro_desc name="p_ficheiro_desc"/>
+                    </row>
+                    <row>
+                        <tipo_identificacao name="p_tipo_identificacao" desc="true">12</tipo_identificacao>
+                        <tipo_identificacao_desc name="p_tipo_identificacao_desc">12</tipo_identificacao_desc>
+                        <numero name="p_numero" desc="true">184</numero>
+                        <numero_desc name="p_numero_desc">184</numero_desc>
+                        <data_emissao name="p_data_emissao" desc="true">01-07-2011</data_emissao>
+                        <data_emissao_desc name="p_data_emissao_desc">01-07-2011</data_emissao_desc>
+                        <data_de_validade name="p_data_de_validade" desc="true">05-04-2012</data_de_validade>
+                        <data_de_validade_desc name="p_data_de_validade_desc">05-04-2012</data_de_validade_desc>
+                        <vitalicio name="p_vitalicio" desc="true"/>
+                        <vitalicio_desc name="p_vitalicio_desc"/>
+                        <entidade_emissora name="p_entidade_emissora" desc="true">Magna unde ut mollit omnis</entidade_emissora>
+                        <entidade_emissora_desc name="p_entidade_emissora_desc">Magna unde ut mollit omnis</entidade_emissora_desc>
+                        <ficheiro name="p_ficheiro" desc="true" visible="false"/>
+                        <ficheiro_desc name="p_ficheiro_desc"/>
+                    </row>
+                    <row>
+                        <tipo_identificacao name="p_tipo_identificacao" desc="true">12</tipo_identificacao>
+                        <tipo_identificacao_desc name="p_tipo_identificacao_desc">12</tipo_identificacao_desc>
+                        <numero name="p_numero" desc="true">167</numero>
+                        <numero_desc name="p_numero_desc">167</numero_desc>
+                        <data_emissao name="p_data_emissao" desc="true">05-04-2010</data_emissao>
+                        <data_emissao_desc name="p_data_emissao_desc">05-04-2010</data_emissao_desc>
+                        <data_de_validade name="p_data_de_validade" desc="true">03-08-2015</data_de_validade>
+                        <data_de_validade_desc name="p_data_de_validade_desc">03-08-2015</data_de_validade_desc>
+                        <vitalicio name="p_vitalicio" desc="true"/>
+                        <vitalicio_desc name="p_vitalicio_desc"/>
+                        <entidade_emissora name="p_entidade_emissora" desc="true">Iste deserunt voluptatem dolor laudantium</entidade_emissora>
+                        <entidade_emissora_desc name="p_entidade_emissora_desc">Iste deserunt voluptatem dolor laudantium</entidade_emissora_desc>
+                        <ficheiro name="p_ficheiro" desc="true" visible="false"/>
+                        <ficheiro_desc name="p_ficheiro_desc"/>
+                    </row>
+                    <row>
+                        <tipo_identificacao name="p_tipo_identificacao" desc="true">12</tipo_identificacao>
+                        <tipo_identificacao_desc name="p_tipo_identificacao_desc">12</tipo_identificacao_desc>
+                        <numero name="p_numero" desc="true">198</numero>
+                        <numero_desc name="p_numero_desc">198</numero_desc>
+                        <data_emissao name="p_data_emissao" desc="true">07-05-2015</data_emissao>
+                        <data_emissao_desc name="p_data_emissao_desc">07-05-2015</data_emissao_desc>
+                        <data_de_validade name="p_data_de_validade" desc="true">04-07-2011</data_de_validade>
+                        <data_de_validade_desc name="p_data_de_validade_desc">04-07-2011</data_de_validade_desc>
+                        <vitalicio name="p_vitalicio" desc="true"/>
+                        <vitalicio_desc name="p_vitalicio_desc"/>
+                        <entidade_emissora name="p_entidade_emissora" desc="true">Anim sit accusantium anim iste</entidade_emissora>
+                        <entidade_emissora_desc name="p_entidade_emissora_desc">Anim sit accusantium anim iste</entidade_emissora_desc>
+                        <ficheiro name="p_ficheiro" desc="true" visible="false"/>
+                        <ficheiro_desc name="p_ficheiro_desc"/>
+                    </row>
+                    <row>
+                        <tipo_identificacao name="p_tipo_identificacao" desc="true">12</tipo_identificacao>
+                        <tipo_identificacao_desc name="p_tipo_identificacao_desc">12</tipo_identificacao_desc>
+                        <numero name="p_numero" desc="true">194</numero>
+                        <numero_desc name="p_numero_desc">194</numero_desc>
+                        <data_emissao name="p_data_emissao" desc="true">04-05-2013</data_emissao>
+                        <data_emissao_desc name="p_data_emissao_desc">04-05-2013</data_emissao_desc>
+                        <data_de_validade name="p_data_de_validade" desc="true">05-06-2017</data_de_validade>
+                        <data_de_validade_desc name="p_data_de_validade_desc">05-06-2017</data_de_validade_desc>
+                        <vitalicio name="p_vitalicio" desc="true"/>
+                        <vitalicio_desc name="p_vitalicio_desc"/>
+                        <entidade_emissora name="p_entidade_emissora" desc="true">Magna rem ut unde adipiscing</entidade_emissora>
+                        <entidade_emissora_desc name="p_entidade_emissora_desc">Magna rem ut unde adipiscing</entidade_emissora_desc>
+                        <ficheiro name="p_ficheiro" desc="true" visible="false"/>
+                        <ficheiro_desc name="p_ficheiro_desc"/>
+                    </row>
+                </value>
+            </table>
+        </separatorlist_4>
+    </content>
+    <blockly>
+        <imports></imports>
+        <xml>
+            <block type="controller" id="controller" x="388" y="13"></block>
+        </xml>
+    </blockly>
+</rows>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP-Template/images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/listar_agregado_familiar/Listar_agregado_familiar.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP-Template/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Listar_agregado_familiar</page>
+    <app>sistema_cuidado_dependentes</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.sistema_cuidado_dependentes.pages</package_db>
+        <package_html>Listar_agregado_familiar</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=108</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title> Agregado Familiar</title>
+        <toolsbar_1 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group="">
+            <item type="specific" code="" rel="novo" refresh_components="">
+                <title>Novo</title>
+                <app>sistema_cuidado_dependentes</app>
+                <page>Agregado_familiar</page>
+                <link>index</link>
+                <target>modal</target>
+                <img>primary|fa-plus</img>
+                <preview>../images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/agregado_familiar/Agregado_familiar.xml</preview>
+            </item>
+        </toolsbar_1>
+        <tbl_agregado_familiar type="table" xml-type="table" title="Lista de Agregado Familiar" gen-type="container" gen-group="true">
+            <fields>
+                <nome name="p_nome" type="text" maxlength="28" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Nome</label>
+                </nome>
+                <email name="p_email" type="text" maxlength="28" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Email</label>
+                </email>
+                <tipo name="p_tipo" type="text" maxlength="28" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Tipo</label>
+                </tipo>
+                <id_agregado_familiar_tbl name="p_id_agregado_familiar_tbl" type="hidden" maxlength="30" showLabel="true" iskey="true" group_in="" java-type="" tag="id_agregado_familiar_tbl"/>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome name="p_nome">Officia stract rem unde offi</nome>
+                        <email name="p_email">Totam perspiciatis sit volup</email>
+                        <tipo name="p_tipo">Natus perspiciatis accusanti</tipo>
+                        <id_agregado_familiar_tbl name="p_id_agregado_familiar_tbl" tag="id_agregado_familiar_tbl">hidden-dbba_22d5</id_agregado_familiar_tbl>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome name="p_nome">Totam voluptatem elit labore</nome>
+                        <email name="p_email">Lorem adipiscing accusantium</email>
+                        <tipo name="p_tipo">Mollit sit sit perspiciatis</tipo>
+                        <id_agregado_familiar_tbl name="p_id_agregado_familiar_tbl" tag="id_agregado_familiar_tbl">hidden-6c6e_ca09</id_agregado_familiar_tbl>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome name="p_nome">Anim amet mollit consectetur</nome>
+                        <email name="p_email">Laudantium ut sed perspiciat</email>
+                        <tipo name="p_tipo">Rem deserunt unde mollit acc</tipo>
+                        <id_agregado_familiar_tbl name="p_id_agregado_familiar_tbl" tag="id_agregado_familiar_tbl">hidden-8021_52cc</id_agregado_familiar_tbl>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome name="p_nome">Natus labore magna adipiscin</nome>
+                        <email name="p_email">Sit totam sed aperiam ut</email>
+                        <tipo name="p_tipo">Stract lorem laudantium accu</tipo>
+                        <id_agregado_familiar_tbl name="p_id_agregado_familiar_tbl" tag="id_agregado_familiar_tbl">hidden-12c7_ad1c</id_agregado_familiar_tbl>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome name="p_nome">Dolor sed elit deserunt omni</nome>
+                        <email name="p_email">Deserunt lorem officia sit i</email>
+                        <tipo name="p_tipo">Sed consectetur totam sed si</tipo>
+                        <id_agregado_familiar_tbl name="p_id_agregado_familiar_tbl" tag="id_agregado_familiar_tbl">hidden-8c17_31a0</id_agregado_familiar_tbl>
+                    </row>
+                </value>
+                <context-menu>
+                    <item id="button_bb7c_bc7e" type="specific" code="" class="primary" rel="visualizar" refresh_components="">
+                        <title>Visualizar</title>
+                        <app>sistema_cuidado_dependentes</app>
+                        <page>Listar_agregado_familiar</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/listar_agregado_familiar/Listar_agregado_familiar.xml?</parameter>
+                        <target>modal</target>
+                        <img>primary|fa-eye</img>
+                        <preview>../images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/listar_agregado_familiar/Listar_agregado_familiar.xml</preview>
+                    </item>
+                    <item id="button_06e6_35d4" type="specific" code="" class="warning" rel="editar" refresh_components="">
+                        <title>Editar</title>
+                        <app>sistema_cuidado_dependentes</app>
+                        <page>Listar_agregado_familiar</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/listar_agregado_familiar/Listar_agregado_familiar.xml?</parameter>
+                        <target>modal</target>
+                        <img>warning|fa-pencil</img>
+                        <preview>../images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/listar_agregado_familiar/Listar_agregado_familiar.xml</preview>
+                    </item>
+                    <item id="button_16c2_6e5c" type="specific" code="" class="danger" rel="eliminar" refresh_components="">
+                        <title>Eliminar</title>
+                        <app>sistema_cuidado_dependentes</app>
+                        <page>Listar_agregado_familiar</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/listar_agregado_familiar/Listar_agregado_familiar.xml?</parameter>
+                        <target>confirm</target>
+                        <img>danger|fa-trash-o</img>
+                        <preview>../images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/listar_agregado_familiar/Listar_agregado_familiar.xml</preview>
+                    </item>
+                </context-menu>
+            </table>
+        </tbl_agregado_familiar>
+    </content>
+    <blockly>
+        <imports>
+            <import type="listar">Listar</import>
+            <import type="dao">TblAgregadoFamiliar</import>
+        </imports>
+        <xml>
+            <block type="controller" id="controller" x="263" y="63"></block>
+            <block type="listar_tbl_agregado_familiar" id="tbl_agregado_familiar" inline="true" x="538" y="88">
+                <mutation pxchecked="false" count="0"></mutation>
+                <field name="dao">TblAgregadoFamiliar</field>
+                <field name="find">TODOSS</field>
+                <field name="FILL">FALSE</field>
+                <statement name="value2">
+                    <block type="rowtablenome" id="String::nome">
+                        <value name="fields_model">
+                            <block type="get-dao-TblAgregadoFamiliar" id="iKr3[qYlLXx[VedgQ3F1">
+                                <mutation hover_type="String::nome"></mutation>
+                                <field name="DAO_FIELD">String::nome</field>
+                            </block>
+                        </value>
+                        <next>
+                            <block type="rowtableemail" id="String::email">
+                                <value name="fields_model">
+                                    <block type="get-dao-TblAgregadoFamiliar" id="vTeaZt-l?M1;|OIK!?^{">
+                                        <mutation hover_type="String::email"></mutation>
+                                        <field name="DAO_FIELD">String::email</field>
+                                    </block>
+                                </value>
+                                <next>
+                                    <block type="rowtabletipo" id="String::tipo">
+                                        <value name="fields_model">
+                                            <block type="get-dao-TblAgregadoFamiliar" id="C%1m6U?N!#*f#ih}Dcn%">
+                                                <mutation hover_type="String::tipo"></mutation>
+                                                <field name="DAO_FIELD">String::tipo</field>
+                                            </block>
+                                        </value>
+                                        <next>
+                                            <block type="rowtableid_agregado_familiar_tbl" id="String::id_agregado_familiar_tbl">
+                                                <value name="fields_model">
+                                                    <block type="get-dao-TblAgregadoFamiliar" id="=USQ@5jd;Xp#rF/?}Ei8">
+                                                        <mutation hover_type="Integer::idAgregadoFamiliar"></mutation>
+                                                        <field name="DAO_FIELD">Integer::idAgregadoFamiliar</field>
+                                                    </block>
+                                                </value>
+                                            </block>
+                                        </next>
+                                    </block>
+                                </next>
+                            </block>
+                        </next>
+                    </block>
+                </statement>
+            </block>
+            <block type="enviar_p" id="yOBSa8liv=#qQsD|sKft" x="463" y="238">
+                <field name="iskey">id_agregado_familiar_tbl</field>
+                <next>
+                    <block type="editar_dao" id="/W=[O`HfMFbOntdM5/#N"></block>
+                </next>
+            </block>
+            <block type="apagar" id="c:-NG+ZTENu}!9K]D+FM" inline="true" x="388" y="363">
+                <field name="dao">TblAgregadoFamiliar</field>
+                <field name="iskey">id_agregado_familiar_tbl</field>
+                <value name="valor1">
+                    <block type="get-dao-TblAgregadoFamiliar" id="odE!`mvyk*tL;6h[)h#A">
+                        <mutation hover_type="Integer::idAgregadoFamiliar"></mutation>
+                        <field name="DAO_FIELD">Integer::idAgregadoFamiliar</field>
+                    </block>
+                </value>
+            </block>
+        </xml>
+    </blockly>
+</rows>

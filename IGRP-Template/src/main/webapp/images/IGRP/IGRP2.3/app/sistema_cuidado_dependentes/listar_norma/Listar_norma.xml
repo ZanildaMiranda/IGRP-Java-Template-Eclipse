@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP-Template/images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/listar_norma/Listar_norma.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP-Template/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Listar_norma</page>
+    <app>sistema_cuidado_dependentes</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.sistema_cuidado_dependentes.pages</package_db>
+        <package_html>Listar_norma</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=118</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Listar Norma</title>
+        <toolsbar_1 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group="">
+            <item type="specific" code="" rel="novo" refresh_components="">
+                <title>Novo</title>
+                <app>sistema_cuidado_dependentes</app>
+                <page>Registar_norma</page>
+                <link>index</link>
+                <target>modal</target>
+                <img>primary|fa-plus</img>
+                <preview>../images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/registar_norma/Registar_norma.xml</preview>
+            </item>
+        </toolsbar_1>
+        <tbl_norma type="table" xml-type="table" title="Lista de Normas" gen-type="container" gen-group="true">
+            <fields>
+                <nome name="p_nome" type="text" maxlength="28" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Nome</label>
+                </nome>
+                <descricao name="p_descricao" type="text" maxlength="28" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Descrição</label>
+                </descricao>
+                <data name="p_data" type="date" range="false" maxlength="28" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Data</label>
+                </data>
+                <id_norma_tbl name="p_id_norma_tbl" type="hidden" maxlength="30" showLabel="true" iskey="true" group_in="" java-type="" tag="id_norma_tbl"/>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome name="p_nome">Ipsum aliqua rem accusantium</nome>
+                        <descricao name="p_descricao">Stract sit iste accusantium</descricao>
+                        <data name="p_data">07-01-2012</data>
+                        <id_norma_tbl name="p_id_norma_tbl" tag="id_norma_tbl">hidden-8273_6a9b</id_norma_tbl>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome name="p_nome">Rem omnis unde iste accusant</nome>
+                        <descricao name="p_descricao">Mollit unde stract accusanti</descricao>
+                        <data name="p_data">07-03-2017</data>
+                        <id_norma_tbl name="p_id_norma_tbl" tag="id_norma_tbl">hidden-e570_0a49</id_norma_tbl>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome name="p_nome">Sit consectetur aliqua offic</nome>
+                        <descricao name="p_descricao">Officia anim magna aliqua to</descricao>
+                        <data name="p_data">08-02-2012</data>
+                        <id_norma_tbl name="p_id_norma_tbl" tag="id_norma_tbl">hidden-f9f0_406e</id_norma_tbl>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome name="p_nome">Lorem mollit deserunt perspi</nome>
+                        <descricao name="p_descricao">Perspiciatis stract perspici</descricao>
+                        <data name="p_data">01-05-2015</data>
+                        <id_norma_tbl name="p_id_norma_tbl" tag="id_norma_tbl">hidden-1b91_f3f3</id_norma_tbl>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome name="p_nome">Dolor accusantium laudantium</nome>
+                        <descricao name="p_descricao">Sit elit natus aliqua deseru</descricao>
+                        <data name="p_data">07-08-2011</data>
+                        <id_norma_tbl name="p_id_norma_tbl" tag="id_norma_tbl">hidden-80a8_d788</id_norma_tbl>
+                    </row>
+                </value>
+                <context-menu>
+                    <item id="button_8f8c_01b5" type="specific" code="" class="warning" rel="editar" refresh_components="">
+                        <title>Editar</title>
+                        <app>sistema_cuidado_dependentes</app>
+                        <page>Listar_norma</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/listar_norma/Listar_norma.xml?</parameter>
+                        <target>modal</target>
+                        <img>warning|fa-pencil</img>
+                        <preview>../images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/listar_norma/Listar_norma.xml</preview>
+                    </item>
+                    <item id="button_32b9_ff6d" type="specific" code="" class="danger" rel="eliminar" refresh_components="">
+                        <title>Eliminar</title>
+                        <app>sistema_cuidado_dependentes</app>
+                        <page>Listar_norma</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/listar_norma/Listar_norma.xml?</parameter>
+                        <target>confirm</target>
+                        <img>danger|fa-trash-o</img>
+                        <preview>../images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/listar_norma/Listar_norma.xml</preview>
+                    </item>
+                </context-menu>
+            </table>
+        </tbl_norma>
+    </content>
+    <blockly>
+        <imports></imports>
+        <xml>
+            <block type="controller" id="controller" x="388" y="13"></block>
+        </xml>
+    </blockly>
+</rows>

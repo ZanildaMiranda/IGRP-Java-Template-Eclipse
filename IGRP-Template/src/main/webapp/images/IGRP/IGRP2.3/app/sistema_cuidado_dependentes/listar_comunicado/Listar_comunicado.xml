@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP-Template/images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/listar_comunicado/Listar_comunicado.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP-Template/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Listar_comunicado</page>
+    <app>sistema_cuidado_dependentes</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.sistema_cuidado_dependentes.pages</package_db>
+        <package_html>Listar_comunicado</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=116</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Listar Comunicado</title>
+        <toolsbar_1 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group="">
+            <item type="specific" code="" rel="novo" refresh_components="">
+                <title>Novo</title>
+                <app>sistema_cuidado_dependentes</app>
+                <page>Registar_comunicado</page>
+                <link>index</link>
+                <target>modal</target>
+                <img>primary|fa-plus</img>
+                <preview>../images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/registar_comunicado/Registar_comunicado.xml</preview>
+            </item>
+        </toolsbar_1>
+        <tbl_comunicado type="table" xml-type="table" title="Lista de Comunicados" gen-type="container" gen-group="true">
+            <fields>
+                <titulo name="p_titulo" type="text" maxlength="28" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Titulo</label>
+                </titulo>
+                <descricao name="p_descricao" type="text" maxlength="28" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Descrição</label>
+                </descricao>
+                <data name="p_data" type="date" range="false" maxlength="28" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Data</label>
+                </data>
+                <id_comunicado_tbl name="p_id_comunicado_tbl" type="hidden" maxlength="30" showLabel="true" iskey="true" group_in="" java-type="" tag="id_comunicado_tbl"/>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <titulo name="p_titulo">Natus sed stract elit sit</titulo>
+                        <descricao name="p_descricao">Sit unde voluptatem amet ape</descricao>
+                        <data name="p_data">01-04-2012</data>
+                        <id_comunicado_tbl name="p_id_comunicado_tbl" tag="id_comunicado_tbl">hidden-e6ff_8f19</id_comunicado_tbl>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <titulo name="p_titulo">Doloremque omnis amet offici</titulo>
+                        <descricao name="p_descricao">Dolor sed totam unde sed</descricao>
+                        <data name="p_data">01-01-2013</data>
+                        <id_comunicado_tbl name="p_id_comunicado_tbl" tag="id_comunicado_tbl">hidden-27a9_358c</id_comunicado_tbl>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <titulo name="p_titulo">Consectetur doloremque accus</titulo>
+                        <descricao name="p_descricao">Natus elit adipiscing amet a</descricao>
+                        <data name="p_data">03-05-2015</data>
+                        <id_comunicado_tbl name="p_id_comunicado_tbl" tag="id_comunicado_tbl">hidden-2685_ae95</id_comunicado_tbl>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <titulo name="p_titulo">Omnis sit laudantium sit per</titulo>
+                        <descricao name="p_descricao">Unde ipsum unde doloremque t</descricao>
+                        <data name="p_data">01-07-2013</data>
+                        <id_comunicado_tbl name="p_id_comunicado_tbl" tag="id_comunicado_tbl">hidden-cb64_93ac</id_comunicado_tbl>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <titulo name="p_titulo">Laudantium aperiam perspicia</titulo>
+                        <descricao name="p_descricao">Accusantium sed voluptatem r</descricao>
+                        <data name="p_data">06-01-2015</data>
+                        <id_comunicado_tbl name="p_id_comunicado_tbl" tag="id_comunicado_tbl">hidden-223d_d9d8</id_comunicado_tbl>
+                    </row>
+                </value>
+                <context-menu>
+                    <item id="button_8f8c_01b5" type="specific" code="" class="warning" rel="editar" refresh_components="">
+                        <title>Editar</title>
+                        <app>sistema_cuidado_dependentes</app>
+                        <page>Listar_comunicado</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/listar_comunicado/Listar_comunicado.xml?</parameter>
+                        <target>modal</target>
+                        <img>warning|fa-pencil</img>
+                        <preview>../images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/listar_comunicado/Listar_comunicado.xml</preview>
+                    </item>
+                    <item id="button_32b9_ff6d" type="specific" code="" class="danger" rel="eliminar" refresh_components="">
+                        <title>Eliminar</title>
+                        <app>sistema_cuidado_dependentes</app>
+                        <page>Listar_comunicado</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/listar_comunicado/Listar_comunicado.xml?</parameter>
+                        <target>confirm</target>
+                        <img>danger|fa-trash-o</img>
+                        <preview>../images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/listar_comunicado/Listar_comunicado.xml</preview>
+                    </item>
+                </context-menu>
+            </table>
+        </tbl_comunicado>
+    </content>
+    <blockly></blockly>
+</rows>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP-Template/images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/listar_entidade/Listar_entidade.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP-Template/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Listar_entidade</page>
+    <app>sistema_cuidado_dependentes</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.sistema_cuidado_dependentes.pages</package_db>
+        <package_html>Listar_entidade</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=111</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Listar Entidade</title>
+        <toolsbar_1 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group="">
+            <item type="specific" code="" rel="novo" refresh_components="">
+                <title>Novo</title>
+                <app>sistema_cuidado_dependentes</app>
+                <page>Entidades</page>
+                <link>index</link>
+                <target>modal</target>
+                <img>primary|fa-plus</img>
+                <preview>../images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/entidades/Entidades.xml</preview>
+            </item>
+        </toolsbar_1>
+        <table_1 type="table" xml-type="table" title="Lista de Entidades" gen-type="container" gen-group="true">
+            <fields>
+                <codigo name="p_codigo" type="text" maxlength="28" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Código</label>
+                </codigo>
+                <nome name="p_nome" type="text" maxlength="28" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Nome</label>
+                </nome>
+                <unidade_cuidado name="p_unidade_cuidado" type="text" maxlength="28" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Unidade Cuidado</label>
+                </unidade_cuidado>
+                <id_entidade_tbl name="p_id_entidade_tbl" type="hidden" maxlength="30" showLabel="true" iskey="true" group_in="" java-type="" tag="id_entidade_tbl"/>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <codigo name="p_codigo">Laudantium aliqua perspiciat</codigo>
+                        <nome name="p_nome">Ipsum elit ut labore accusan</nome>
+                        <unidade_cuidado name="p_unidade_cuidado">Ut lorem accusantium rem ani</unidade_cuidado>
+                        <id_entidade_tbl name="p_id_entidade_tbl" tag="id_entidade_tbl">hidden-2699_7e2e</id_entidade_tbl>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <codigo name="p_codigo">Labore magna iste doloremque</codigo>
+                        <nome name="p_nome">Magna dolor amet omnis sed</nome>
+                        <unidade_cuidado name="p_unidade_cuidado">Stract lorem laudantium ipsu</unidade_cuidado>
+                        <id_entidade_tbl name="p_id_entidade_tbl" tag="id_entidade_tbl">hidden-b6eb_aa45</id_entidade_tbl>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <codigo name="p_codigo">Omnis natus lorem accusantiu</codigo>
+                        <nome name="p_nome">Officia consectetur mollit s</nome>
+                        <unidade_cuidado name="p_unidade_cuidado">Sit sit labore sit totam</unidade_cuidado>
+                        <id_entidade_tbl name="p_id_entidade_tbl" tag="id_entidade_tbl">hidden-6db0_6f40</id_entidade_tbl>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <codigo name="p_codigo">Consectetur voluptatem aliqu</codigo>
+                        <nome name="p_nome">Adipiscing dolor natus aliqu</nome>
+                        <unidade_cuidado name="p_unidade_cuidado">Officia deserunt aliqua rem</unidade_cuidado>
+                        <id_entidade_tbl name="p_id_entidade_tbl" tag="id_entidade_tbl">hidden-b536_f6c3</id_entidade_tbl>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <codigo name="p_codigo">Labore sit natus unde elit</codigo>
+                        <nome name="p_nome">Omnis stract voluptatem aliq</nome>
+                        <unidade_cuidado name="p_unidade_cuidado">Lorem totam labore accusanti</unidade_cuidado>
+                        <id_entidade_tbl name="p_id_entidade_tbl" tag="id_entidade_tbl">hidden-c03c_fe4e</id_entidade_tbl>
+                    </row>
+                </value>
+                <context-menu>
+                    <item id="button_76d6_ee2b" type="specific" code="" class="primary" rel="visualizar" refresh_components="">
+                        <title>Visualizar</title>
+                        <app>sistema_cuidado_dependentes</app>
+                        <page>Viewentidade</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/viewentidade/Viewentidade.xml?</parameter>
+                        <target>modal</target>
+                        <img>primary|fa-eye</img>
+                        <preview>../images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/viewentidade/Viewentidade.xml</preview>
+                    </item>
+                    <item id="button_5059_f583" type="specific" code="" class="warning" rel="editar" refresh_components="">
+                        <title>Editar</title>
+                        <app>sistema_cuidado_dependentes</app>
+                        <page>Listar_entidade</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/listar_entidade/Listar_entidade.xml?</parameter>
+                        <target>modal</target>
+                        <img>warning|fa-pencil</img>
+                        <preview>../images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/listar_entidade/Listar_entidade.xml</preview>
+                    </item>
+                    <item id="button_7902_b125" type="specific" code="" class="danger" rel="eliminar" refresh_components="">
+                        <title>Eliminar</title>
+                        <app>sistema_cuidado_dependentes</app>
+                        <page>Listar_entidade</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/listar_entidade/Listar_entidade.xml?</parameter>
+                        <target>modal</target>
+                        <img>danger|fa-trash-o</img>
+                        <preview>../images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/listar_entidade/Listar_entidade.xml</preview>
+                    </item>
+                </context-menu>
+            </table>
+        </table_1>
+    </content>
+    <blockly>
+        <imports>
+            <import type="listar">Listar</import>
+            <import type="dao">TblEntidade</import>
+        </imports>
+        <xml>
+            <block type="listar_table_1" id="C6s:^B!dp}b6er5:Zm_r" x="0" y="0">
+                <mutation pxchecked="false" count="0"></mutation>
+                <field name="dao">TblEntidade</field>
+                <field name="find">TODOSS</field>
+                <field name="FILL">FALSE</field>
+            </block>
+            <block type="rowtablecodigo" id="5yYZgW(sr7mK~{TlFmXV" x="0" y="0"></block>
+            <block type="get-dao-TblEntidade" id="E(2!oLJBQkHSig#3#LOq" x="0" y="0"></block>
+            <block type="controller" id="controller" x="663" y="188"></block>
+        </xml>
+    </blockly>
+</rows>

@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP-Template/images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/home/Home.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP-Template/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Home</page>
+    <app>sistema_cuidado_dependentes</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.sistema_cuidado_dependentes.pages</package_db>
+        <package_html>Home</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=105</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Home</title>
+        <ttl_cuidadores type="statbox" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <ttl_cuidadores_title name="p_ttl_cuidadores_title" type="text" maxlength="4000">
+                    <label>Box Title</label>
+                    <value>Total de Cuidadores</value>
+                </ttl_cuidadores_title>
+                <ttl_cuidadores_val name="p_ttl_cuidadores_val" type="text" maxlength="4000">
+                    <label>Value</label>
+                    <value>875</value>
+                </ttl_cuidadores_val>
+                <ttl_cuidadores_txt name="p_ttl_cuidadores_txt" type="text" maxlength="4000">
+                    <label>Url Text</label>
+                    <value/>
+                </ttl_cuidadores_txt>
+                <ttl_cuidadores_url name="p_ttl_cuidadores_url" type="text" maxlength="4000">
+                    <label>Url</label>
+                    <value/>
+                </ttl_cuidadores_url>
+                <ttl_cuidadores_bg name="p_ttl_cuidadores_bg" type="text" maxlength="4000">
+                    <label>Background</label>
+                    <value>cp-starrynight</value>
+                </ttl_cuidadores_bg>
+                <ttl_cuidadores_icn name="p_ttl_cuidadores_icn" type="text" maxlength="4000" persist="true">
+                    <label>Icon</label>
+                    <value>fa-user-md</value>
+                </ttl_cuidadores_icn>
+            </fields>
+        </ttl_cuidadores>
+        <ttl_dependentes type="statbox" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <ttl_dependentes_title name="p_ttl_dependentes_title" type="text" maxlength="4000">
+                    <label>Box Title</label>
+                    <value>Total de  Dependentes</value>
+                </ttl_dependentes_title>
+                <ttl_dependentes_val name="p_ttl_dependentes_val" type="text" maxlength="4000">
+                    <label>Value</label>
+                    <value>791</value>
+                </ttl_dependentes_val>
+                <ttl_dependentes_txt name="p_ttl_dependentes_txt" type="text" maxlength="4000">
+                    <label>Url Text</label>
+                    <value/>
+                </ttl_dependentes_txt>
+                <ttl_dependentes_url name="p_ttl_dependentes_url" type="text" maxlength="4000">
+                    <label>Url</label>
+                    <value/>
+                </ttl_dependentes_url>
+                <ttl_dependentes_bg name="p_ttl_dependentes_bg" type="text" maxlength="4000">
+                    <label>Background</label>
+                    <value>cp-stylish</value>
+                </ttl_dependentes_bg>
+                <ttl_dependentes_icn name="p_ttl_dependentes_icn" type="text" maxlength="4000" persist="true">
+                    <label>Icon</label>
+                    <value>fa-users</value>
+                </ttl_dependentes_icn>
+            </fields>
+        </ttl_dependentes>
+        <ttl_unidade type="statbox" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <ttl_unidade_title name="p_ttl_unidade_title" type="text" maxlength="4000">
+                    <label>Box Title</label>
+                    <value>Unidade de Cuidados</value>
+                </ttl_unidade_title>
+                <ttl_unidade_val name="p_ttl_unidade_val" type="text" maxlength="4000">
+                    <label>Value</label>
+                    <value>474</value>
+                </ttl_unidade_val>
+                <ttl_unidade_txt name="p_ttl_unidade_txt" type="text" maxlength="4000">
+                    <label>Url Text</label>
+                    <value/>
+                </ttl_unidade_txt>
+                <ttl_unidade_url name="p_ttl_unidade_url" type="text" maxlength="4000">
+                    <label>Url</label>
+                    <value/>
+                </ttl_unidade_url>
+                <ttl_unidade_bg name="p_ttl_unidade_bg" type="text" maxlength="4000">
+                    <label>Background</label>
+                    <value>cp-lavendar</value>
+                </ttl_unidade_bg>
+                <ttl_unidade_icn name="p_ttl_unidade_icn" type="text" maxlength="4000" persist="true">
+                    <label>Icon</label>
+                    <value>fa-bank</value>
+                </ttl_unidade_icn>
+            </fields>
+        </ttl_unidade>
+        <ttl_servicos type="statbox" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <ttl_servicos_title name="p_ttl_servicos_title" type="text" maxlength="4000">
+                    <label>Box Title</label>
+                    <value>Serviços de Cuidados</value>
+                </ttl_servicos_title>
+                <ttl_servicos_val name="p_ttl_servicos_val" type="text" maxlength="4000">
+                    <label>Value</label>
+                    <value>182</value>
+                </ttl_servicos_val>
+                <ttl_servicos_txt name="p_ttl_servicos_txt" type="text" maxlength="4000">
+                    <label>Url Text</label>
+                    <value/>
+                </ttl_servicos_txt>
+                <ttl_servicos_url name="p_ttl_servicos_url" type="text" maxlength="4000">
+                    <label>Url</label>
+                    <value/>
+                </ttl_servicos_url>
+                <ttl_servicos_bg name="p_ttl_servicos_bg" type="text" maxlength="4000">
+                    <label>Background</label>
+                    <value>cp-fresh</value>
+                </ttl_servicos_bg>
+                <ttl_servicos_icn name="p_ttl_servicos_icn" type="text" maxlength="4000" persist="true">
+                    <label>Icon</label>
+                    <value>fa-gears</value>
+                </ttl_servicos_icn>
+            </fields>
+        </ttl_servicos>
+        <chart_1 type="chart" xml-type="chart" title="Chart" gen-type="container" gen-group="">
+            <caption/>
+            <chart_type>line</chart_type>
+            <xaxys>Eixo de X</xaxys>
+            <yaxys>Eixo de Y</yaxys>
+            <url>#</url>
+            <label>
+                <col>Ano</col>
+                <col>X1</col>
+                <col>X2</col>
+                <col>X3</col>
+                <col>X4</col>
+            </label>
+            <value>
+                <row>
+                    <col>2010</col>
+                    <col>820</col>
+                    <col>193</col>
+                    <col>531</col>
+                    <col>364</col>
+                </row>
+                <row>
+                    <col>2009</col>
+                    <col>359</col>
+                    <col>473</col>
+                    <col>105</col>
+                    <col>448</col>
+                </row>
+                <row>
+                    <col>2015</col>
+                    <col>1010</col>
+                    <col>538</col>
+                    <col>38</col>
+                    <col>20</col>
+                </row>
+            </value>
+            <colors>
+                <col>#37b15e</col>
+                <col>#024a22</col>
+                <col>#5cca30</col>
+                <col>#aad33f</col>
+            </colors>
+        </chart_1>
+        <form_1 type="form" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <form_1_date_1 name="p_form_1_date_1" type="date" range="true" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="dd-mm-yyyy" desclabel="false" right="false" class="primary">
+                    <label>Date</label>
+                    <value>03-05-2015</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </form_1_date_1>
+            </fields>
+            <tools-bar>
+                <item id="button_12e0_43de" type="form" code="" class="primary" rel="filtrar" refresh_components="chart_1">
+                    <title>Filtrar</title>
+                    <app>sistema_cuidado_dependentes</app>
+                    <page>Home</page>
+                    <link>index</link>
+                    <parameter>../images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/home/Home.xml?</parameter>
+                    <target>submit_ajax</target>
+                    <img>primary|fa-filter</img>
+                    <preview>../images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/home/Home.xml</preview>
+                </item>
+            </tools-bar>
+        </form_1>
+        <tbl_cuidadores_services type="table" xml-type="table" title="Cuidadores em Serviços" gen-type="container" gen-group="true">
+            <fields>
+                <cuidadores name="p_cuidadores" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Cuidadores</label>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </cuidadores>
+                <porcentagem name="p_porcentagem" type="text" maxlength="15" showLabel="true" align="center" lookup_parser="false" iskey="false" group_in="">
+                    <label>Percentagem</label>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </porcentagem>
+                <estado name="p_estado" type="text" maxlength="5" showLabel="true" align="center" lookup_parser="false" iskey="false" group_in="">
+                    <label>Estado</label>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </estado>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <cuidadores name="p_cuidadores">Amet aliqua adipiscing iste lo</cuidadores>
+                        <porcentagem name="p_porcentagem">Consectetur sit</porcentagem>
+                        <estado name="p_estado">Ipsum</estado>
+                    </row>
+                    <row>
+                        <cuidadores name="p_cuidadores">Iste magna aliqua adipiscing s</cuidadores>
+                        <porcentagem name="p_porcentagem">Totam ipsum ani</porcentagem>
+                        <estado name="p_estado">Elit</estado>
+                    </row>
+                    <row>
+                        <cuidadores name="p_cuidadores">Perspiciatis stract voluptatem</cuidadores>
+                        <porcentagem name="p_porcentagem">Sit sed adipisc</porcentagem>
+                        <estado name="p_estado">Lauda</estado>
+                    </row>
+                    <row>
+                        <cuidadores name="p_cuidadores">Anim totam rem sit rem</cuidadores>
+                        <porcentagem name="p_porcentagem">Omnis laudantiu</porcentagem>
+                        <estado name="p_estado">Amet</estado>
+                    </row>
+                    <row>
+                        <cuidadores name="p_cuidadores">Lorem ipsum anim consectetur l</cuidadores>
+                        <porcentagem name="p_porcentagem">Officia elit ap</porcentagem>
+                        <estado name="p_estado">Elit</estado>
+                    </row>
+                </value>
+            </table>
+        </tbl_cuidadores_services>
+    </content>
+    <blockly>
+        <imports></imports>
+        <xml>
+            <block type="controller" id="controller" x="388" y="13"></block>
+        </xml>
+    </blockly>
+</rows>

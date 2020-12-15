@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP-Template/images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/entidades/Entidades.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP-Template/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Entidades</page>
+    <app>sistema_cuidado_dependentes</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.sistema_cuidado_dependentes.pages</package_db>
+        <package_html>Entidades</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=102</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Registar Entidades</title>
+        <box_1 type="box" xml-type="form" title="Registo  de Entidade" gen-type="container" gen-group="">
+            <fields/>
+        </box_1>
+        <form_1 type="form" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <codigo name="p_codigo" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Código</label>
+                    <value>Deserunt anim natus totam sed</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </codigo>
+                <local name="p_local" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Local</label>
+                    <value>Iste natus consectetur ut magna</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </local>
+                <nome name="p_nome" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Nome</label>
+                    <value>Iste ut sit aliqua sit</value>
+                </nome>
+                <telefone name="p_telefone" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Telefone</label>
+                    <value>Accusantium unde officia sit magna</value>
+                </telefone>
+                <nif name="p_nif" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Nif</label>
+                    <value>Perspiciatis dolor perspiciatis laudantium aliqua</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </nif>
+                <unidade_cuidado name="p_unidade_cuidado" type="select" multiple="false" tags="false" domain="" maxlength="250" required="true" change="false" disabled="false" right="false" java-type="">
+                    <label>Unidade Cuidado</label>
+                    <list>
+                        <option/>
+                        <option>
+                            <text>Option 1</text>
+                            <value>1</value>
+                        </option>
+                        <option>
+                            <text>Option 2</text>
+                            <value>2</value>
+                        </option>
+                        <option>
+                            <text>Option 3</text>
+                            <value>3</value>
+                        </option>
+                        <option>
+                            <text>Option 4</text>
+                            <value>4</value>
+                        </option>
+                    </list>
+                </unidade_cuidado>
+                <form_1_email_1 name="p_form_1_email_1" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Email</label>
+                    <value>Sit amet totam iste amet</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </form_1_email_1>
+                <hidden name="p_id_entidade" type="hidden" maxlength="250" java-type="Integer" tag="id_entidade"/>
+            </fields>
+        </form_1>
+        <toolsbar type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group="">
+            <item type="specific" code="" rel="registar" refresh_components="">
+                <title>Registar</title>
+                <app>sistema_cuidado_dependentes</app>
+                <page>Entidades</page>
+                <link>index</link>
+                <target>submit_form</target>
+                <img>success|fa-save</img>
+                <preview>../images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/entidades/Entidades.xml</preview>
+            </item>
+        </toolsbar>
+    </content>
+    <blockly>
+        <imports>
+            <import type="inserir_dao">Inserir Daos</import>
+            <import type="combo_dao">Combo Dao</import>
+            <import type="dao">TblUnidadeCuidado</import>
+            <import type="dao">TblEntidade</import>
+        </imports>
+        <xml>
+            <block type="controller" id="Ue^DX-L,/Fbxe9Q:GJre" x="613" y="338"></block>
+            <block type="combo_dao" id="JX0-C^e|.9ergG=*W?ct" inline="true" x="763" y="363">
+                <mutation pxchecked="false" count="0"></mutation>
+                <field name="selecao">unidade_cuidado</field>
+                <field name="dao">TblUnidadeCuidado</field>
+                <field name="selecionar">TRUE</field>
+                <statement name="key_val">
+                    <block type="option_dao" id="kKcca/`tFoyJ6(gJC.*0" inline="true">
+                        <value name="key_val">
+                            <block type="get-dao-TblUnidadeCuidado" id="E:kZk:5DiQ#=8w7iRM`w">
+                                <mutation hover_type="Integer::idUnidadeCuidado"></mutation>
+                                <field name="DAO_FIELD">Integer::idUnidadeCuidado</field>
+                            </block>
+                        </value>
+                        <value name="value_val">
+                            <block type="get-dao-TblUnidadeCuidado" id="{=X|W,[t6Me_@EUoE;un">
+                                <mutation hover_type="String::nome"></mutation>
+                                <field name="DAO_FIELD">String::nome</field>
+                            </block>
+                        </value>
+                    </block>
+                </statement>
+                <next>
+                    <block type="formuu_form_1" id="Qmz%v#yXjza8^9)QqhKJ" inline="true">
+                        <mutation pxchecked="false" count="0"></mutation>
+                        <field name="dao">TblEntidade</field>
+                        <value name="get_pa">
+                            <block type="core_get_param" id=",sy9W3[GYJ=6Lp7tV/~g">
+                                <field name="param">id_entidade</field>
+                            </block>
+                        </value>
+                        <statement name="value2">
+                            <block type="model_form_codigo" id="String::codigo">
+                                <value name="value1">
+                                    <block type="get-dao-TblEntidade" id="+@zN%eVA0tVf#er2kP%q">
+                                        <mutation hover_type="Integer::codigo"></mutation>
+                                        <field name="DAO_FIELD">Integer::codigo</field>
+                                    </block>
+                                </value>
+                                <next>
+                                    <block type="model_form_local" id="String::local">
+                                        <value name="value1">
+                                            <block type="get-dao-TblEntidade" id="/i[C+s+vI3xQEl304q1J">
+                                                <mutation hover_type="String::local"></mutation>
+                                                <field name="DAO_FIELD">String::local</field>
+                                            </block>
+                                        </value>
+                                        <next>
+                                            <block type="model_form_nome" id="String::nome">
+                                                <value name="value1">
+                                                    <block type="get-dao-TblEntidade" id="=wB~bx0,^;#fSkuRDr`K">
+                                                        <mutation hover_type="String::nome"></mutation>
+                                                        <field name="DAO_FIELD">String::nome</field>
+                                                    </block>
+                                                </value>
+                                                <next>
+                                                    <block type="model_form_telefone" id="String::telefone">
+                                                        <value name="value1">
+                                                            <block type="get-dao-TblEntidade" id="jo#l7m%(mN0P/OHSF,Vg">
+                                                                <mutation hover_type="Integer::telefone"></mutation>
+                                                                <field name="DAO_FIELD">Integer::telefone</field>
+                                                            </block>
+                                                        </value>
+                                                        <next>
+                                                            <block type="model_form_nif" id="String::nif">
+                                                                <value name="value1">
+                                                                    <block type="get-dao-TblEntidade" id="F7/:IGv!kFX.-l)v:F}=">
+                                                                        <mutation hover_type="Integer::nif"></mutation>
+                                                                        <field name="DAO_FIELD">Integer::nif</field>
+                                                                    </block>
+                                                                </value>
+                                                                <next>
+                                                                    <block type="model_form_unidade_cuidado" id="String::unidade_cuidado">
+                                                                        <value name="value1">
+                                                                            <block type="get-dao-TblEntidade" id="E19Z#!{Ax,37bru_a::L">
+                                                                                <mutation hover_type="TblUnidadeCuidado_FK#::idUnidadeCuidadoFk"></mutation>
+                                                                                <field name="DAO_FIELD">TblUnidadeCuidado_FK#::idUnidadeCuidadoFk</field>
+                                                                                <value name="dao_rela">
+                                                                                    <block type="get-dao-TblUnidadeCuidado" id="maGs,4v0p`,p2d@-,(s`">
+                                                                                        <mutation hover_type="String::nome"></mutation>
+                                                                                        <field name="DAO_FIELD">String::nome</field>
+                                                                                    </block>
+                                                                                </value>
+                                                                            </block>
+                                                                        </value>
+                                                                        <next>
+                                                                            <block type="model_form_form_1_email_1" id="String::form_1_email_1">
+                                                                                <value name="value1">
+                                                                                    <block type="get-dao-TblEntidade" id="MTjkFRCn-SPxafWA]#Dk">
+                                                                                        <mutation hover_type="String::email"></mutation>
+                                                                                        <field name="DAO_FIELD">String::email</field>
+                                                                                    </block>
+                                                                                </value>
+                                                                                <next>
+                                                                                    <block type="model_form_id_entidade" id="Integer::id_entidade">
+                                                                                        <value name="value1">
+                                                                                            <block type="get-dao-TblEntidade" id="..uO1fy1grk6FRJX|2g@">
+                                                                                                <mutation hover_type="Integer::idEntidade"></mutation>
+                                                                                                <field name="DAO_FIELD">Integer::idEntidade</field>
+                                                                                            </block>
+                                                                                        </value>
+                                                                                        <next>
+                                                                                            <block type="add_isedit" id=",Y~VdFjNbvc;+)nL8[.j">
+                                                                                                <field name="button">registar</field>
+                                                                                            </block>
+                                                                                        </next>
+                                                                                    </block>
+                                                                                </next>
+                                                                            </block>
+                                                                        </next>
+                                                                    </block>
+                                                                </next>
+                                                            </block>
+                                                        </next>
+                                                    </block>
+                                                </next>
+                                            </block>
+                                        </next>
+                                    </block>
+                                </next>
+                            </block>
+                        </statement>
+                    </block>
+                </next>
+            </block>
+            <block type="save_formu_form_1" id=")/A[rVS1N0m~jE[:V9@L" inline="true" x="738" y="763">
+                <mutation count="0" pxchecked="true"></mutation>
+                <field name="dao">TblEntidade</field>
+                <field name="EDIT">TRUE</field>
+                <value name="param_id">
+                    <block type="mod_formform_1" id="koj1J5WlM8rLgo#SN-*_">
+                        <field name="get_model">Integer::id_entidade</field>
+                    </block>
+                </value>
+                <statement name="value2">
+                    <block type="set-dao-TblEntidade" id="YC{M0@b3.A;;eq=sdeR3" inline="false">
+                        <mutation hover_type="Integer::codigo"></mutation>
+                        <field name="DAO_FIELD">Integer::codigo</field>
+                        <value name="value1">
+                            <block type="mod_formform_1" id="X4_;OZVhb@aO#Nn7QJ^P">
+                                <field name="get_model">String::codigo</field>
+                            </block>
+                        </value>
+                        <next>
+                            <block type="set-dao-TblEntidade" id="cX?.*_*fO5)w.{eV]S`}" inline="false">
+                                <mutation hover_type="String::local"></mutation>
+                                <field name="DAO_FIELD">String::local</field>
+                                <value name="value1">
+                                    <block type="mod_formform_1" id="gT?c2o`*Be4{Q^1U5Bw6">
+                                        <field name="get_model">String::local</field>
+                                    </block>
+                                </value>
+                                <next>
+                                    <block type="set-dao-TblEntidade" id="z+~q,S:i=.%;IH,]kR`H" inline="false">
+                                        <mutation hover_type="String::nome"></mutation>
+                                        <field name="DAO_FIELD">String::nome</field>
+                                        <value name="value1">
+                                            <block type="mod_formform_1" id="4Blx%X#%Yudlly%Ig{Hr">
+                                                <field name="get_model">String::nome</field>
+                                            </block>
+                                        </value>
+                                        <next>
+                                            <block type="set-dao-TblEntidade" id="fk7Va3jUr5(xF_P6IjXm" inline="false">
+                                                <mutation hover_type="Integer::telefone"></mutation>
+                                                <field name="DAO_FIELD">Integer::telefone</field>
+                                                <value name="value1">
+                                                    <block type="mod_formform_1" id="wzr1Qm?@=Ie78T#*_Dp)">
+                                                        <field name="get_model">String::telefone</field>
+                                                    </block>
+                                                </value>
+                                                <next>
+                                                    <block type="set-dao-TblEntidade" id="zM_F!-Y;p8GUYtoCZz)d" inline="false">
+                                                        <mutation hover_type="Integer::nif"></mutation>
+                                                        <field name="DAO_FIELD">Integer::nif</field>
+                                                        <value name="value1">
+                                                            <block type="mod_formform_1" id="1EgW-uL3{)y7]M9]CD.X">
+                                                                <field name="get_model">String::nif</field>
+                                                            </block>
+                                                        </value>
+                                                        <next>
+                                                            <block type="set-dao-TblEntidade" id=";y|]I%?|o]j-yNH@4rJI" inline="true">
+                                                                <mutation hover_type="TblUnidadeCuidado_FK#::idUnidadeCuidadoFk"></mutation>
+                                                                <field name="DAO_FIELD">TblUnidadeCuidado_FK#::idUnidadeCuidadoFk</field>
+                                                                <value name="value1">
+                                                                    <block type="mod_formform_1" id="MJ9v-?#6E8`~ogOU:FXr">
+                                                                        <field name="get_model">String::unidade_cuidado</field>
+                                                                    </block>
+                                                                </value>
+                                                                <next>
+                                                                    <block type="set-dao-TblEntidade" id="c=`k`^`4,r3+SpP{]@Ca" inline="false">
+                                                                        <mutation hover_type="String::email"></mutation>
+                                                                        <field name="DAO_FIELD">String::email</field>
+                                                                        <value name="value1">
+                                                                            <block type="mod_formform_1" id="84Kk?(-a~{7EV+fC83Y3">
+                                                                                <field name="get_model">String::form_1_email_1</field>
+                                                                            </block>
+                                                                        </value>
+                                                                    </block>
+                                                                </next>
+                                                            </block>
+                                                        </next>
+                                                    </block>
+                                                </next>
+                                            </block>
+                                        </next>
+                                    </block>
+                                </next>
+                            </block>
+                        </next>
+                    </block>
+                </statement>
+            </block>
+        </xml>
+    </blockly>
+</rows>

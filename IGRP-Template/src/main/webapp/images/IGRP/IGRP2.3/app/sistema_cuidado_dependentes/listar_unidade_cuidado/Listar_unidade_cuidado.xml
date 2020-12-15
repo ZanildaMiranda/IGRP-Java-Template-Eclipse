@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP-Template/images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/listar_unidade_cuidado/Listar_unidade_cuidado.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP-Template/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Listar_unidade_cuidado</page>
+    <app>sistema_cuidado_dependentes</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.sistema_cuidado_dependentes.pages</package_db>
+        <package_html>Listar_unidade_cuidado</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=91</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Listar Unidade_Cuidado</title>
+        <sectionheader_1 type="sectionheader" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <sectionheader_1_text type="text" name="p_sectionheader_1_text" persist="true" maxlength="4000">
+                    <value>
+                        <![CDATA[<p>Lista de Unidade de Cuidado</p>
+]]>
+                    </value>
+                </sectionheader_1_text>
+            </fields>
+        </sectionheader_1>
+        <toolsbar_1 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group="">
+            <item type="specific" code="" rel="novo" refresh_components="">
+                <title>Novo</title>
+                <app>sistema_cuidado_dependentes</app>
+                <page>Registar_unidade_de_cuidado</page>
+                <link>index</link>
+                <target>modal|refresh</target>
+                <img>primary|fa-plus</img>
+                <preview>../images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/registar_unidade_de_cuidado/Registar_unidade_de_cuidado.xml</preview>
+            </item>
+        </toolsbar_1>
+        <table_1 type="table" xml-type="table" gen-type="container" gen-group="true">
+            <fields>
+                <unidade_cuidado name="p_unidade_cuidado" type="text" maxlength="300" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Unidade Cuidado</label>
+                </unidade_cuidado>
+                <localizacao name="p_localizacao" type="text" maxlength="300" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Localização</label>
+                </localizacao>
+                <contacto name="p_contacto" type="text" maxlength="300" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Contacto</label>
+                </contacto>
+                <id_unidade_cuidado_tbl name="p_id_unidade_cuidado_tbl" type="hidden" maxlength="30" showLabel="true" iskey="true" group_in="" java-type="Integer" tag="id_unidade_cuidado_tbl"/>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <unidade_cuidado name="p_unidade_cuidado">Natus perspiciatis sit ut sed</unidade_cuidado>
+                        <localizacao name="p_localizacao">Rem accusantium ipsum sit ut</localizacao>
+                        <contacto name="p_contacto">Rem magna officia magna omnis</contacto>
+                        <id_unidade_cuidado_tbl name="p_id_unidade_cuidado_tbl" tag="id_unidade_cuidado_tbl">hidden-7410_66d3</id_unidade_cuidado_tbl>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <unidade_cuidado name="p_unidade_cuidado">Anim perspiciatis lorem perspiciatis rem</unidade_cuidado>
+                        <localizacao name="p_localizacao">Anim natus ipsum rem anim</localizacao>
+                        <contacto name="p_contacto">Iste elit mollit magna aperiam</contacto>
+                        <id_unidade_cuidado_tbl name="p_id_unidade_cuidado_tbl" tag="id_unidade_cuidado_tbl">hidden-fc20_b0f4</id_unidade_cuidado_tbl>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <unidade_cuidado name="p_unidade_cuidado">Aliqua mollit ut consectetur voluptatem</unidade_cuidado>
+                        <localizacao name="p_localizacao">Laudantium mollit aperiam sit consectetur</localizacao>
+                        <contacto name="p_contacto">Aperiam iste aliqua perspiciatis mollit</contacto>
+                        <id_unidade_cuidado_tbl name="p_id_unidade_cuidado_tbl" tag="id_unidade_cuidado_tbl">hidden-1ff4_58c5</id_unidade_cuidado_tbl>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <unidade_cuidado name="p_unidade_cuidado">Voluptatem iste stract ut officia</unidade_cuidado>
+                        <localizacao name="p_localizacao">Amet aliqua mollit deserunt sed</localizacao>
+                        <contacto name="p_contacto">Adipiscing amet sed unde officia</contacto>
+                        <id_unidade_cuidado_tbl name="p_id_unidade_cuidado_tbl" tag="id_unidade_cuidado_tbl">hidden-7ad5_2cb3</id_unidade_cuidado_tbl>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <unidade_cuidado name="p_unidade_cuidado">Officia labore voluptatem totam ut</unidade_cuidado>
+                        <localizacao name="p_localizacao">Lorem magna sit mollit dolor</localizacao>
+                        <contacto name="p_contacto">Dolor aliqua accusantium laudantium dolor</contacto>
+                        <id_unidade_cuidado_tbl name="p_id_unidade_cuidado_tbl" tag="id_unidade_cuidado_tbl">hidden-6afd_2be4</id_unidade_cuidado_tbl>
+                    </row>
+                </value>
+                <context-menu>
+                    <item id="button_e928_cdfd" type="specific" code="" class="primary" rel="ver" refresh_components="">
+                        <title>Ver</title>
+                        <app>sistema_cuidado_dependentes</app>
+                        <page>Registar_unidade_de_cuidado</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/registar_unidade_de_cuidado/Registar_unidade_de_cuidado.xml?</parameter>
+                        <target>modal</target>
+                        <img>primary|fa-eye</img>
+                        <preview>../images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/registar_unidade_de_cuidado/Registar_unidade_de_cuidado.xml</preview>
+                    </item>
+                    <item id="button_455d_ffb7" type="specific" code="" class="primary" rel="editar" refresh_components="">
+                        <title>Editar</title>
+                        <app>sistema_cuidado_dependentes</app>
+                        <page>Registar_unidade_de_cuidado</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/registar_unidade_de_cuidado/Registar_unidade_de_cuidado.xml?</parameter>
+                        <target>modal|refresh</target>
+                        <img>primary|fa-pencil</img>
+                        <preview>../images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/registar_unidade_de_cuidado/Registar_unidade_de_cuidado.xml</preview>
+                    </item>
+                    <item id="button_9e91_a526" type="specific" code="" class="primary" rel="eliminar" refresh_components="">
+                        <title>Eliminar</title>
+                        <app>sistema_cuidado_dependentes</app>
+                        <page>Listar_unidade_cuidado</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/listar_unidade_cuidado/Listar_unidade_cuidado.xml?</parameter>
+                        <target>confirm</target>
+                        <img>primary|fa-trash</img>
+                        <preview>../images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/listar_unidade_cuidado/Listar_unidade_cuidado.xml</preview>
+                    </item>
+                </context-menu>
+            </table>
+        </table_1>
+    </content>
+    <blockly>
+        <imports>
+            <import type="listar">Listar</import>
+            <import type="dao">TblUnidadeCuidado</import>
+        </imports>
+        <xml>
+            <block type="controller" id="controller" x="288" y="38">
+                <statement name="index">
+                    <block type="comment_code" id="IH6w7fx~;-JE5(@*#+|L">
+                        <statement name="value1">
+                            <block type="listar_table_1" id="table_1" inline="true">
+                                <mutation pxchecked="false" count="0"></mutation>
+                                <field name="dao">TblUnidadeCuidado</field>
+                                <field name="find">TODOSS</field>
+                                <field name="FILL">FALSE</field>
+                                <statement name="value2">
+                                    <block type="rowtableunidade_cuidado" id="String::unidade_cuidado">
+                                        <value name="fields_model">
+                                            <block type="get-dao-TblUnidadeCuidado" id="8(7VTZA1?=XOmwW!X0Ly">
+                                                <mutation hover_type="String::nome"></mutation>
+                                                <field name="DAO_FIELD">String::nome</field>
+                                            </block>
+                                        </value>
+                                        <next>
+                                            <block type="rowtablelocalizacao" id="String::localizacao">
+                                                <value name="fields_model">
+                                                    <block type="get-dao-TblUnidadeCuidado" id="W0*(:.Y[h]slWn{VuX~:">
+                                                        <mutation hover_type="String::localidade"></mutation>
+                                                        <field name="DAO_FIELD">String::localidade</field>
+                                                    </block>
+                                                </value>
+                                                <next>
+                                                    <block type="rowtablecontacto" id="String::contacto">
+                                                        <value name="fields_model">
+                                                            <block type="get-dao-TblUnidadeCuidado" id="9mLQXzyH_;*ECaw@OP_[">
+                                                                <mutation hover_type="Integer::telefone"></mutation>
+                                                                <field name="DAO_FIELD">Integer::telefone</field>
+                                                            </block>
+                                                        </value>
+                                                        <next>
+                                                            <block type="rowtableid_unidade_cuidado_tbl" id="Integer::id_unidade_cuidado_tbl">
+                                                                <value name="fields_model">
+                                                                    <block type="get-dao-TblUnidadeCuidado" id="WNhSlOd*nF17PTP}2?WY">
+                                                                        <mutation hover_type="Integer::idUnidadeCuidado"></mutation>
+                                                                        <field name="DAO_FIELD">Integer::idUnidadeCuidado</field>
+                                                                    </block>
+                                                                </value>
+                                                            </block>
+                                                        </next>
+                                                    </block>
+                                                </next>
+                                            </block>
+                                        </next>
+                                    </block>
+                                </statement>
+                            </block>
+                        </statement>
+                    </block>
+                </statement>
+                <statement name="editar">
+                    <block type="comment_code" id=".*jzV;{5/c-9aUi@TW}E">
+                        <statement name="value1">
+                            <block type="enviar_p" id="?z2owm*Hbs97/t4j7:P}">
+                                <field name="iskey">id_unidade_cuidado_tbl</field>
+                                <next>
+                                    <block type="editar_dao" id=")gaUB17CX6_SM^/Ke.KJ"></block>
+                                </next>
+                            </block>
+                        </statement>
+                    </block>
+                </statement>
+                <statement name="eliminar">
+                    <block type="comment_code" id=":@v6u{:zIhCcQ;9[PI;0">
+                        <statement name="value1">
+                            <block type="apagar" id="8.[eh{0YU+%63hqvh/[V" inline="true">
+                                <field name="dao">TblUnidadeCuidado</field>
+                                <field name="iskey">id_unidade_cuidado_tbl</field>
+                                <value name="valor1">
+                                    <block type="get-dao-TblUnidadeCuidado" id="An4adp;-/AD8Wn8O.g#x">
+                                        <mutation hover_type="Integer::idUnidadeCuidado"></mutation>
+                                        <field name="DAO_FIELD">Integer::idUnidadeCuidado</field>
+                                    </block>
+                                </value>
+                            </block>
+                        </statement>
+                    </block>
+                </statement>
+            </block>
+        </xml>
+    </blockly>
+</rows>

@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP-Template/images/IGRP/IGRP2.3/app/cuidado_dos_dependentes/dependenteslista/DependentesLista.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP-Template/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>DependentesLista</page>
+    <app>cuidado_dos_dependentes</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.cuidado_dos_dependentes.pages</package_db>
+        <package_html>DependentesLista</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=94</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Cadastro de Dependentes</title>
+        <form_1 type="form" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <flt_nome name="p_flt_nome" type="text" maxlength="500" required="false" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Nome</label>
+                    <value>Ipsum elit sed perspiciatis laudantium</value>
+                </flt_nome>
+            </fields>
+        </form_1>
+        <toolsbar_1 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group="">
+            <item type="specific" code="" rel="novo_" refresh_components="">
+                <title>Novo </title>
+                <app>cuidado_dos_dependentes</app>
+                <page>DependenteForm</page>
+                <link>index</link>
+                <target>modal|refresh</target>
+                <img>primary|fa-address-book-o</img>
+                <preview>../images/IGRP/IGRP2.3/app/cuidado_dos_dependentes/dependenteform/DependenteForm.xml</preview>
+            </item>
+            <item type="specific" code="" rel="filtrar" refresh_components="table_1">
+                <title>Filtrar</title>
+                <app>cuidado_dos_dependentes</app>
+                <page>DependentesLista</page>
+                <link>index</link>
+                <target>submit_ajax</target>
+                <img>primary|fa-search</img>
+                <preview>../images/IGRP/IGRP2.3/app/cuidado_dos_dependentes/dependenteslista/DependentesLista.xml</preview>
+            </item>
+        </toolsbar_1>
+        <sectionheader_1 type="sectionheader" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <sectionheader_1_text type="text" name="p_sectionheader_1_text" persist="true" maxlength="4000">
+                    <value>
+                        <![CDATA[<p>Lista de Dependentes</p>
+]]>
+                    </value>
+                </sectionheader_1_text>
+            </fields>
+        </sectionheader_1>
+        <table_1 type="table" xml-type="table" gen-type="container" gen-group="true">
+            <fields>
+                <nome name="p_nome" type="text" maxlength="500" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Nome</label>
+                </nome>
+                <data_de_nascimento name="p_data_de_nascimento" type="date" range="false" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Data de Nascimento</label>
+                </data_de_nascimento>
+                <sexo name="p_sexo" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Sexo</label>
+                </sexo>
+                <estado_civil name="p_estado_civil" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Estado Cívil</label>
+                </estado_civil>
+                <_n_de_agregado_familiar name="p__n_de_agregado_familiar" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label> Nº de Agregado Familiar</label>
+                </_n_de_agregado_familiar>
+                <id name="p_id" type="hidden" maxlength="30" showLabel="true" iskey="true" group_in="" java-type="Integer" tag="id"/>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome name="p_nome">Aliqua magna deserunt mollit elit</nome>
+                        <data_de_nascimento name="p_data_de_nascimento">01-01-2013</data_de_nascimento>
+                        <sexo name="p_sexo">Unde consectetur ipsum aperiam</sexo>
+                        <estado_civil name="p_estado_civil">Officia rem mollit voluptatem</estado_civil>
+                        <_n_de_agregado_familiar name="p__n_de_agregado_familiar">Voluptatem sed accusantium mol</_n_de_agregado_familiar>
+                        <id name="p_id" tag="id">hidden-306a_186a</id>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome name="p_nome">Stract amet anim voluptatem officia</nome>
+                        <data_de_nascimento name="p_data_de_nascimento">01-03-2016</data_de_nascimento>
+                        <sexo name="p_sexo">Laudantium adipiscing sit dolo</sexo>
+                        <estado_civil name="p_estado_civil">Dolor aperiam ipsum aperiam ip</estado_civil>
+                        <_n_de_agregado_familiar name="p__n_de_agregado_familiar">Voluptatem accusantium aperiam</_n_de_agregado_familiar>
+                        <id name="p_id" tag="id">hidden-d478_9e82</id>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome name="p_nome">Dolor aperiam stract laudantium omnis</nome>
+                        <data_de_nascimento name="p_data_de_nascimento">01-06-2013</data_de_nascimento>
+                        <sexo name="p_sexo">Sed sit rem amet rem</sexo>
+                        <estado_civil name="p_estado_civil">Aperiam iste adipiscing sed vo</estado_civil>
+                        <_n_de_agregado_familiar name="p__n_de_agregado_familiar">Mollit adipiscing labore aperi</_n_de_agregado_familiar>
+                        <id name="p_id" tag="id">hidden-d6b3_3e66</id>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome name="p_nome">Iste consectetur dolor officia omnis</nome>
+                        <data_de_nascimento name="p_data_de_nascimento">03-06-2015</data_de_nascimento>
+                        <sexo name="p_sexo">Consectetur sed dolor unde omn</sexo>
+                        <estado_civil name="p_estado_civil">Adipiscing iste rem magna dolo</estado_civil>
+                        <_n_de_agregado_familiar name="p__n_de_agregado_familiar">Aperiam sit laudantium aliqua</_n_de_agregado_familiar>
+                        <id name="p_id" tag="id">hidden-eed7_cd8e</id>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome name="p_nome">Perspiciatis magna perspiciatis sit natus</nome>
+                        <data_de_nascimento name="p_data_de_nascimento">04-06-2016</data_de_nascimento>
+                        <sexo name="p_sexo">Unde deserunt omnis doloremque</sexo>
+                        <estado_civil name="p_estado_civil">Magna dolor anim officia iste</estado_civil>
+                        <_n_de_agregado_familiar name="p__n_de_agregado_familiar">Adipiscing magna rem lorem sit</_n_de_agregado_familiar>
+                        <id name="p_id" tag="id">hidden-8338_e229</id>
+                    </row>
+                </value>
+                <context-menu>
+                    <item id="button_3b29_b6ea" type="specific" code="" class="primary" rel="vizualizar" refresh_components="">
+                        <title>Vizualizar</title>
+                        <app>cuidado_dos_dependentes</app>
+                        <page>DependenteFormEdit</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/cuidado_dos_dependentes/dependenteformedit/DependenteFormEdit.xml?</parameter>
+                        <target>modal|refresh</target>
+                        <img>primary|fa-eye</img>
+                        <preview>../images/IGRP/IGRP2.3/app/cuidado_dos_dependentes/dependenteformedit/DependenteFormEdit.xml</preview>
+                    </item>
+                    <item id="button_4249_f2c0" type="specific" code="" class="primary" rel="editar" refresh_components="">
+                        <title>Editar</title>
+                        <app>cuidado_dos_dependentes</app>
+                        <page>DependenteFormEdit</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/cuidado_dos_dependentes/dependenteformedit/DependenteFormEdit.xml?</parameter>
+                        <target>modal|refresh</target>
+                        <img>primary|fa-edit</img>
+                        <preview>../images/IGRP/IGRP2.3/app/cuidado_dos_dependentes/dependenteformedit/DependenteFormEdit.xml</preview>
+                    </item>
+                    <item id="button_ccb4_9e7f" type="specific" code="" class="danger" rel="eliminar" refresh_components="">
+                        <title>Eliminar</title>
+                        <app>cuidado_dos_dependentes</app>
+                        <page>DependenteFormEdit</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/cuidado_dos_dependentes/dependenteformedit/DependenteFormEdit.xml?</parameter>
+                        <target>confirm</target>
+                        <img>danger|fa-trash</img>
+                        <preview>../images/IGRP/IGRP2.3/app/cuidado_dos_dependentes/dependenteformedit/DependenteFormEdit.xml</preview>
+                    </item>
+                </context-menu>
+            </table>
+        </table_1>
+    </content>
+    <blockly>
+        <imports>
+            <import type="listar">Listar</import>
+            <import type="dao">TPessoa</import>
+            <import type="fields">Date</import>
+        </imports>
+        <xml>
+            <block type="controller" id="controller" x="407" y="19">
+                <statement name="index">
+                    <block type="comment_code" id="Fyywjy[bw|fJ1t51ViW!">
+                        <statement name="value1">
+                            <block type="listar_table_1" id="table_1" inline="true">
+                                <mutation pxchecked="false" count="0"></mutation>
+                                <field name="dao">TPessoa</field>
+                                <field name="find">TODOSS</field>
+                                <field name="FILL">FALSE</field>
+                                <statement name="value2">
+                                    <block type="rowtablenome" id="String::nome">
+                                        <value name="fields_model">
+                                            <block type="get-dao-TPessoa" id="?b8SK)~^xca:|/*8xdNS">
+                                                <mutation hover_type="String::nome"></mutation>
+                                                <field name="DAO_FIELD">String::nome</field>
+                                            </block>
+                                        </value>
+                                        <next>
+                                            <block type="rowtabledata_de_nascimento" id="String::data_de_nascimento">
+                                                <value name="fields_model">
+                                                    <block type="get-dao-TPessoa" id="bCu6jwfG3D4bRJ[jbD8F">
+                                                        <mutation hover_type="Date::dataNascimento"></mutation>
+                                                        <field name="DAO_FIELD">Date::dataNascimento</field>
+                                                    </block>
+                                                </value>
+                                                <next>
+                                                    <block type="rowtablesexo" id="String::sexo">
+                                                        <value name="fields_model">
+                                                            <block type="get-dao-TPessoa" id="BG_!AGoYj(jqc#jlgJP5">
+                                                                <mutation hover_type="String::sexo"></mutation>
+                                                                <field name="DAO_FIELD">String::sexo</field>
+                                                            </block>
+                                                        </value>
+                                                        <next>
+                                                            <block type="rowtableestado_civil" id="String::estado_civil">
+                                                                <value name="fields_model">
+                                                                    <block type="get-dao-TPessoa" id="#WaiJFNYQ!i3BYr2(1v!">
+                                                                        <mutation hover_type="String::estadoCivi"></mutation>
+                                                                        <field name="DAO_FIELD">String::estadoCivi</field>
+                                                                    </block>
+                                                                </value>
+                                                                <next>
+                                                                    <block type="rowtableid" id="Integer::id">
+                                                                        <value name="fields_model">
+                                                                            <block type="get-dao-TPessoa" id="O:Q%FAtTdbO^^hJXm6hR">
+                                                                                <mutation hover_type="Integer::id"></mutation>
+                                                                                <field name="DAO_FIELD">Integer::id</field>
+                                                                            </block>
+                                                                        </value>
+                                                                    </block>
+                                                                </next>
+                                                            </block>
+                                                        </next>
+                                                    </block>
+                                                </next>
+                                            </block>
+                                        </next>
+                                    </block>
+                                </statement>
+                            </block>
+                        </statement>
+                    </block>
+                </statement>
+                <statement name="editar">
+                    <block type="comment_code" id="/VVO=s{N%S#Fj!cQzpT7">
+                        <statement name="value1">
+                            <block type="editar_dao" id="@QL]WY5~5RU|*Xk:n0z8">
+                                <next>
+                                    <block type="enviar_p" id="pr.:#=({z{]2cWt5Iadm">
+                                        <field name="iskey">id</field>
+                                    </block>
+                                </next>
+                            </block>
+                        </statement>
+                    </block>
+                </statement>
+                <statement name="eliminar">
+                    <block type="comment_code" id="J8Qu!v[Wm`-atIro@Qh,">
+                        <statement name="value1">
+                            <block type="apagar" id="B|=G*QjOyuZ_(LF98^QC" inline="true">
+                                <field name="dao">TPessoa</field>
+                                <field name="iskey">id</field>
+                                <value name="valor1">
+                                    <block type="get-dao-TPessoa" id="#hSw0zJQcwbUIy3iRj[4">
+                                        <mutation hover_type="Integer::id"></mutation>
+                                        <field name="DAO_FIELD">Integer::id</field>
+                                    </block>
+                                </value>
+                            </block>
+                        </statement>
+                    </block>
+                </statement>
+            </block>
+        </xml>
+    </blockly>
+</rows>

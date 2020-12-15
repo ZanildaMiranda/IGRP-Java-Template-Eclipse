@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP-Template/images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/listar_formacao/Listar_formacao.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP-Template/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Listar_formacao</page>
+    <app>sistema_cuidado_dependentes</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.sistema_cuidado_dependentes.pages</package_db>
+        <package_html>Listar_formacao</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=128</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Listar Formação</title>
+        <toolsbar_1 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group="">
+            <item type="specific" code="" rel="novo" refresh_components="">
+                <title>Novo</title>
+                <app>sistema_cuidado_dependentes</app>
+                <page>Registar_cuidado</page>
+                <link>index</link>
+                <target>modal</target>
+                <img>primary|fa-plus</img>
+                <preview>../images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/registar_cuidado/Registar_cuidado.xml</preview>
+            </item>
+        </toolsbar_1>
+        <tbl_formacao type="table" xml-type="table" title="Lista de Formação" gen-type="container" gen-group="true">
+            <fields>
+                <nome name="p_nome" type="text" maxlength="28" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Nome</label>
+                </nome>
+                <descricao name="p_descricao" type="text" maxlength="28" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Descrição</label>
+                </descricao>
+                <especializacao name="p_especializacao" type="text" maxlength="28" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Especialização</label>
+                </especializacao>
+                <data name="p_data" type="date" range="false" maxlength="28" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Data</label>
+                </data>
+                <id_formacao_tbl name="p_id_formacao_tbl" type="hidden" maxlength="30" showLabel="true" iskey="true" group_in="" java-type="" tag="id_formacao_tbl"/>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome name="p_nome">Mollit anim amet rem omnis</nome>
+                        <descricao name="p_descricao">Totam anim doloremque accusa</descricao>
+                        <especializacao name="p_especializacao">Adipiscing amet lorem aperia</especializacao>
+                        <data name="p_data">06-08-2013</data>
+                        <id_formacao_tbl name="p_id_formacao_tbl" tag="id_formacao_tbl">hidden-0f2c_5780</id_formacao_tbl>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome name="p_nome">Totam magna sed deserunt eli</nome>
+                        <descricao name="p_descricao">Laudantium magna sit deserun</descricao>
+                        <especializacao name="p_especializacao">Unde adipiscing perspiciatis</especializacao>
+                        <data name="p_data">04-01-2012</data>
+                        <id_formacao_tbl name="p_id_formacao_tbl" tag="id_formacao_tbl">hidden-63e1_0652</id_formacao_tbl>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome name="p_nome">Dolor ipsum lorem labore sed</nome>
+                        <descricao name="p_descricao">Magna elit totam magna molli</descricao>
+                        <especializacao name="p_especializacao">Omnis perspiciatis accusanti</especializacao>
+                        <data name="p_data">01-01-2014</data>
+                        <id_formacao_tbl name="p_id_formacao_tbl" tag="id_formacao_tbl">hidden-95db_6ee8</id_formacao_tbl>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome name="p_nome">Consectetur totam mollit ips</nome>
+                        <descricao name="p_descricao">Dolor aperiam sit adipiscing</descricao>
+                        <especializacao name="p_especializacao">Magna stract deserunt dolore</especializacao>
+                        <data name="p_data">04-02-2011</data>
+                        <id_formacao_tbl name="p_id_formacao_tbl" tag="id_formacao_tbl">hidden-dd2f_5502</id_formacao_tbl>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome name="p_nome">Aliqua dolor officia deserun</nome>
+                        <descricao name="p_descricao">Magna elit voluptatem lorem</descricao>
+                        <especializacao name="p_especializacao">Accusantium sed magna natus</especializacao>
+                        <data name="p_data">04-07-2010</data>
+                        <id_formacao_tbl name="p_id_formacao_tbl" tag="id_formacao_tbl">hidden-3648_2c02</id_formacao_tbl>
+                    </row>
+                </value>
+                <context-menu>
+                    <item id="button_8f8c_01b5" type="specific" code="" class="warning" rel="editar" refresh_components="">
+                        <title>Editar</title>
+                        <app>sistema_cuidado_dependentes</app>
+                        <page>Listar_formacao</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/listar_formacao/Listar_formacao.xml?</parameter>
+                        <target>modal</target>
+                        <img>warning|fa-pencil</img>
+                        <preview>../images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/listar_formacao/Listar_formacao.xml</preview>
+                    </item>
+                    <item id="button_32b9_ff6d" type="specific" code="" class="danger" rel="eliminar" refresh_components="">
+                        <title>Eliminar</title>
+                        <app>sistema_cuidado_dependentes</app>
+                        <page>Listar_formacao</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/listar_formacao/Listar_formacao.xml?</parameter>
+                        <target>confirm</target>
+                        <img>danger|fa-trash-o</img>
+                        <preview>../images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/listar_formacao/Listar_formacao.xml</preview>
+                    </item>
+                </context-menu>
+            </table>
+        </tbl_formacao>
+    </content>
+    <blockly>
+        <imports></imports>
+        <xml>
+            <block type="controller" id="controller" x="388" y="13"></block>
+        </xml>
+    </blockly>
+</rows>

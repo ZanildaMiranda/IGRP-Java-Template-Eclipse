@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP-Template/images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/listar_equipamento/Listar_equipamento.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP-Template/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Listar_equipamento</page>
+    <app>sistema_cuidado_dependentes</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.sistema_cuidado_dependentes.pages</package_db>
+        <package_html>Listar_equipamento</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=120</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Listar Equipamento</title>
+        <toolsbar_1 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group="">
+            <item type="specific" code="" rel="novo" refresh_components="">
+                <title>Novo</title>
+                <app>sistema_cuidado_dependentes</app>
+                <page>Registar_equipamento</page>
+                <link>index</link>
+                <target>modal</target>
+                <img>primary|fa-plus</img>
+                <preview>../images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/registar_equipamento/Registar_equipamento.xml</preview>
+            </item>
+        </toolsbar_1>
+        <tbl_equipamento type="table" xml-type="table" title="Lista de Equipamentos" gen-type="container" gen-group="true">
+            <fields>
+                <nome name="p_nome" type="text" maxlength="28" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Nome</label>
+                </nome>
+                <quantidade name="p_quantidade" type="text" maxlength="28" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Quantidade</label>
+                </quantidade>
+                <unidade_de_cuidado name="p_unidade_de_cuidado" type="text" maxlength="28" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Unidade de Cuidado</label>
+                </unidade_de_cuidado>
+                <id_equipamento_tbl name="p_id_equipamento_tbl" type="hidden" maxlength="30" showLabel="true" iskey="true" group_in="" java-type="" tag="id_equipamento_tbl"/>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome name="p_nome">Lorem anim amet sit ipsum</nome>
+                        <quantidade name="p_quantidade">Unde perspiciatis ut natus a</quantidade>
+                        <unidade_de_cuidado name="p_unidade_de_cuidado">Lorem doloremque consectetur</unidade_de_cuidado>
+                        <id_equipamento_tbl name="p_id_equipamento_tbl" tag="id_equipamento_tbl">hidden-cb70_e56b</id_equipamento_tbl>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome name="p_nome">Laudantium lorem doloremque</nome>
+                        <quantidade name="p_quantidade">Adipiscing sit stract labore</quantidade>
+                        <unidade_de_cuidado name="p_unidade_de_cuidado">Consectetur sed rem officia</unidade_de_cuidado>
+                        <id_equipamento_tbl name="p_id_equipamento_tbl" tag="id_equipamento_tbl">hidden-a4c8_7e2a</id_equipamento_tbl>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome name="p_nome">Labore amet laudantium iste</nome>
+                        <quantidade name="p_quantidade">Ut officia lorem sed anim</quantidade>
+                        <unidade_de_cuidado name="p_unidade_de_cuidado">Amet sit ut sit sit</unidade_de_cuidado>
+                        <id_equipamento_tbl name="p_id_equipamento_tbl" tag="id_equipamento_tbl">hidden-438f_a337</id_equipamento_tbl>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome name="p_nome">Magna consectetur adipiscing</nome>
+                        <quantidade name="p_quantidade">Sit deserunt unde stract mag</quantidade>
+                        <unidade_de_cuidado name="p_unidade_de_cuidado">Totam stract lorem unde iste</unidade_de_cuidado>
+                        <id_equipamento_tbl name="p_id_equipamento_tbl" tag="id_equipamento_tbl">hidden-5ea8_0db1</id_equipamento_tbl>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome name="p_nome">Totam iste totam amet omnis</nome>
+                        <quantidade name="p_quantidade">Officia voluptatem magna eli</quantidade>
+                        <unidade_de_cuidado name="p_unidade_de_cuidado">Sed ut unde aliqua unde</unidade_de_cuidado>
+                        <id_equipamento_tbl name="p_id_equipamento_tbl" tag="id_equipamento_tbl">hidden-a1b4_b14e</id_equipamento_tbl>
+                    </row>
+                </value>
+                <context-menu>
+                    <item id="button_bb7c_bc7e" type="specific" code="" class="primary" rel="visualizar" refresh_components="">
+                        <title>Visualizar</title>
+                        <app>sistema_cuidado_dependentes</app>
+                        <page>Listar_equipamento</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/listar_equipamento/Listar_equipamento.xml?</parameter>
+                        <target>modal</target>
+                        <img>primary|fa-eye</img>
+                        <preview>../images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/listar_equipamento/Listar_equipamento.xml</preview>
+                    </item>
+                    <item id="button_06e6_35d4" type="specific" code="" class="warning" rel="editar" refresh_components="">
+                        <title>Editar</title>
+                        <app>sistema_cuidado_dependentes</app>
+                        <page>Registar_equipamento</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/registar_equipamento/Registar_equipamento.xml?</parameter>
+                        <target>modal</target>
+                        <img>warning|fa-pencil</img>
+                        <preview>../images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/registar_equipamento/Registar_equipamento.xml</preview>
+                    </item>
+                    <item id="button_16c2_6e5c" type="specific" code="" class="danger" rel="eliminar" refresh_components="">
+                        <title>Eliminar</title>
+                        <app>sistema_cuidado_dependentes</app>
+                        <page>Listar_equipamento</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/listar_equipamento/Listar_equipamento.xml?</parameter>
+                        <target>confirm</target>
+                        <img>danger|fa-trash-o</img>
+                        <preview>../images/IGRP/IGRP2.3/app/sistema_cuidado_dependentes/listar_equipamento/Listar_equipamento.xml</preview>
+                    </item>
+                </context-menu>
+            </table>
+        </tbl_equipamento>
+    </content>
+    <blockly>
+        <imports></imports>
+        <xml>
+            <block type="controller" id="controller" x="388" y="13"></block>
+        </xml>
+    </blockly>
+</rows>
