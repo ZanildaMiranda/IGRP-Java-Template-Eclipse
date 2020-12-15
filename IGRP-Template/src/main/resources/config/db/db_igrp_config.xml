@@ -8,7 +8,7 @@
 	<entry key="urlConnection">jdbc:postgresql://localhost:5432/db_igrp</entry>
 	<entry key="driverConnection">org.postgresql.Driver</entry>
 	<entry key="username">postgres</entry>
-	<entry key="password">password</entry>
+	<entry key="password">pgdev</entry>
 </properties>
 
 <!-- 
